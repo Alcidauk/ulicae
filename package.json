@@ -10,9 +10,11 @@
   "dependencies": {
     "@babel/polyfill": "^7.0.0-rc.1",
     "vue": "^2.5.17",
+    "vue-material-design-icons": "^2.1.1",
     "vuetify": "^1.2.0"
   },
   "devDependencies": {
+    "@mdi/font": "^2.8.94",
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-eslint": "^3.0.4",
     "@vue/cli-service": "^3.0.4",

@@ -8,14 +8,12 @@
 </template>
 
 <script>
-import Category from './components/cv/category'
 import Cv from './components/cv/cv'
 import Toolbar from './components/toolbar'
 
 export default {
   name: 'App',
   components: {
-    Category,
     Cv,
     Toolbar
   },

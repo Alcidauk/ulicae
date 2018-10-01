@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar color="lime lighten-1">
+  <v-toolbar app fixed :clipped-left="true" color="lime lighten-1">
     <div class="toolbar-title">
       <v-toolbar-title v-text="title" class="title-font teal--text text--darken-4"/>
       <v-toolbar-title class="subtitle-font teal--text text--darken-4">Pierre Rognon</v-toolbar-title>

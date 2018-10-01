@@ -1,40 +1,41 @@
 <template>
-  <v-container fluid>
-       <v-navigation-drawer
-       class="lime lighten-1"
-      persistent
+  <v-container>
+
+    <v-navigation-drawer
+      class="lime lighten-1"
       :mini-variant="miniVariant"
-      :clipped=true
-      v-model="drawer"
-      enable-resize-watcher
-    >
-      <v-btn icon @click.stop="miniVariant = !miniVariant">
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"></v-icon>
+      :clipped="$vuetify.breakpoint.lgAndUp"
+      fixed
+      app>
+
+      <v-btn icon left @click.stop="miniVariant = !miniVariant">
+        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"/>
       </v-btn>
       <v-list>
         <v-list-tile
           value="true"
           v-for="(item, i) in items"
           :key="i"
-          @click.prevent="selectedPage = item.currentPage"
-        >
+          @click.prevent="selectedPage = item.currentPage">
           <v-list-tile-action>
-            <v-icon color="teal darken-4" v-html="item.icon"></v-icon>
+            <v-icon color="teal darken-4" v-html="item.icon"/>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title class="teal--text text--darken-4" v-text="item.title"></v-list-tile-title>
+            <v-list-tile-title class="teal--text text--darken-4" v-text="item.title"/>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>
     </v-navigation-drawer>
 
-      <Category currentPage="formation" :selectedPage="selectedPage"/>
-      <Category currentPage="experiences" :selectedPage="selectedPage"/>
+    <FormationCategory currentPage="formation" :selectedPage="selectedPage"/>
+    <KnowledgeCategory currentPage="knowledges" :selectedPage="selectedPage"/>
+
   </v-container>
 </template>
 
 <script>
-import Category from './category'
+import FormationCategory from './formation-category'
+import KnowledgeCategory from './knowledge-category'
 
 export default {
   name: 'Cv',
@@ -42,13 +43,14 @@ export default {
     msg: String
   },
   components: {
-    Category
+    FormationCategory,
+    KnowledgeCategory
   },
   data () {
     return {
       miniVariant: false,
       selectedPage: 'formation',
-      drawer: true,
+      drawer: null,
       fixed: false,
       items: [{
         icon: 'mdi-school',
@@ -62,7 +64,8 @@ export default {
       },
       {
         icon: 'mdi-chart-line-variant',
-        title: 'Compétences'
+        title: 'Compétences',
+        currentPage: 'knowledges'
       },
       {
         icon: 'mdi-sticker-emoji',
@@ -76,21 +79,3 @@ export default {
   }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-</style>

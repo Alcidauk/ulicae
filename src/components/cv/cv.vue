@@ -28,6 +28,7 @@
     </v-navigation-drawer>
 
     <FormationCategory currentPage="formation" :selectedPage="selectedPage"/>
+    <ExperienceCategory currentPage="experiences" :selectedPage="selectedPage"/>
     <KnowledgeCategory currentPage="knowledges" :selectedPage="selectedPage"/>
 
   </v-container>
@@ -36,6 +37,7 @@
 <script>
 import FormationCategory from './formation-category'
 import KnowledgeCategory from './knowledge-category'
+import ExperienceCategory from './experience-category'
 
 export default {
   name: 'Cv',
@@ -44,7 +46,8 @@ export default {
   },
   components: {
     FormationCategory,
-    KnowledgeCategory
+    KnowledgeCategory,
+    ExperienceCategory
   },
   data () {
     return {
@@ -52,15 +55,16 @@ export default {
       selectedPage: 'formation',
       drawer: null,
       fixed: false,
-      items: [{
-        icon: 'mdi-school',
-        title: 'Formation',
-        currentPage: 'formation'
-      },
+      items: [
       {
         icon: 'mdi-briefcase-outline',
         title: 'Expériences',
         currentPage: 'experiences'
+      },
+        {
+        icon: 'mdi-school',
+        title: 'Formation',
+        currentPage: 'formation'
       },
       {
         icon: 'mdi-chart-line-variant',

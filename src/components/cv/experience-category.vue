@@ -1,0 +1,183 @@
+<template>
+  <v-layout v-if="selectedPage === currentPage" row>
+
+            <v-container>
+                <h1 class="page-title">Expériences</h1>
+                <v-expansion-panel class="ma-2">
+                  <ExperienceStep v-for="(experience, index) in experiences" :key="index"
+                    :title=experience.title
+                    :place=experience.place
+                    :dates=experience.dates
+                    :diploma=experience.diploma
+                    :subDiploma=experience.subDiploma
+                    :imgsrc=experience.imgsrc />
+                </v-expansion-panel>
+            </v-container>
+
+  </v-layout>
+</template>
+
+<script>
+import ExperienceStep from './experience-step'
+
+export default {
+  name: 'ExperienceCategory',
+  props: {
+    currentPage: String,
+    selectedPage: String
+  },
+  data () {
+    return {
+      experiences: [
+        {
+          title: "Lead technique & ingénieur développement FullStack",
+          place: "SKINsoft (Besançon, France)",
+          dates: "04/2017 à 07/2018",
+          diploma: "Conception, définition des orientations techniques logicielles, et développement sur les produits SKINsoft",
+          subDiploma: [
+            { 
+              title: "Développement au sein de la suite logicielle de SKINsoft",
+              content: "- développement Backend sur la plate-forme SKINsoft, surcouche à la GED (Gestion Électronique de Documents) Nuxeo, en Java EE\n" +
+              "- développement Frontend sur la plate-forme SKPlayer, utilisant le framework Javascript ExtJS"
+            },
+            { 
+              title: "Développement au sein de la nouvelle architecture logicielle de SKINsoft",
+              content: "- développement Backend sur la nouvelle architecture logicielle (Spring/Java EE, MongoDB, API REST)\n" +
+              "- développement Frontend sur la nouvelle architecture logicielle (Vue.js)"
+            },
+            { 
+              title: "Suivi de la qualité des développements de l'ensemble de l'équipe",
+              content: "- mise en place de revues de code\n" +
+              "- participation à l'élaboration des Sprints"
+            },
+            { 
+              title: "Participation à la relation client:\n",
+              content: "- participation à plusieurs auditions lors d'appels d'offres\n" +
+              "- intervention chez plusieurs clients dans le cadre de support technique\n" +
+              "- intervention chez plusieurs clients de le cadre du suivi technique de projets"
+            }
+          ],
+          imgsrc: "skin.jpg"
+        },
+        {
+          title: "Ingénieur développement fullstack",
+          place: "SKINsoft (Besançon, France)",
+          dates: "08/2015 à 03/2017",
+          diploma: "Conception, spécification et développement sur la suite logicielle de SKINsoft",
+          subDiploma: [
+            { 
+              title: "Développement au sein de la suite logicielle de SKINsoft",
+              content: "- développement Backend sur la plate-forme SKINsoft, surcouche à la GED (Gestion Électronique de Documents) Nuxeo, en Java EE\n" +
+              "- développement Frontend sur la plate-forme SKPlayer, utilisant le framework Javascript ExtJS"
+            },
+            { 
+              title: "Développement et maintenance de l'application mobile SKINreporter",
+              content: "- refactor, maintenance et réalisation d'évolutions de l'application native Android\n" +
+              "- réalisation d'évolutions sur l'API Rest de la suite SKINsoft\n" +
+              "- suivi et finalisation de la relation avec le prestataire en charge du développement de l'application native Android"
+            },
+            { 
+              title: "Participation à la relation client",
+              content: "- déplacements chez plusieurs clients lors d'ateliers de compréhension technique des besoins\n" +
+              "- gestion de maintenance et de mises à jour chez plusieurs clients auto-hébergés"
+            },
+            { 
+              title: "Participation à la conception d'une nouvelle architecture logicielle",
+              content: "- réflexion autour d'un choix pérenne de l'architecture existante\n" +
+              "- réalisation d'une étude et de preuves de concepts autour de l'architecture logicielle\n" +
+              "participation à la définition de la nouvelle architecture (from scratch)"
+            }
+          ],
+            imgsrc: "skin.jpg"
+        },
+        {
+          title: "Ingénieur informatique stagiaire",
+          place: "SKINsoft (Besançon, France)",
+          dates: "02/2015 à 07/2015",
+          diploma: "Développement d'un nouveau produit mobile",
+          subDiploma: [
+            { 
+              title: "Réalisation d'une API REST au sein de la plate-forme SKINsoft",
+              content: "- recherche d'une solution technique et réalisation de preuves de concepts pour le développement d'une API REST en Java\n" +
+              "- développement d'un tiers se connectant à la plate-forme SKINsoft pour mettre à disposition des données au sein d'une API REST\n" +
+              "- réalisation d'une documentation technique autour de l'utilisation de l'API REST et maintenance de celle-ci"
+            },
+            { 
+              title: "Gestion de la relation avec le prestataire en charge du développement mobile",
+              content: "- mise en place d'une collaboration afin de développer une API REST conforme aux besoins de l'application mobile\n" +
+              "- suivi de l'avancement des développements du prestataire, organisation de réunions techniques\n" +
+              "- tests fonctionnels de l'application native Android"
+            }
+          ],
+            imgsrc: "skin.jpg"
+        },
+        {
+          title: "Technicien informatique",
+          place: "Kimoce (Mulhouse, France)",
+          dates: "07/2014",
+          diploma: "Développement à majorité BackEnd sur une application Web en Java EE (CDD d’un mois, suite au stage d’assistant ingénieur)",
+          subDiploma: [
+            { 
+              title: "Développement d’un module BackEnd en Java",
+              content: "- développement des couches modèle et présentation d'un nouveau module fonctionnel\n" +
+              "- participation au développement de la couche vue à l'aide du Framework VAADIN"
+            },
+            { 
+              title: "Gestion de la relation avec le prestataire en charge du développement mobile",
+              content: "- mise en place d'une collaboration afin de développer une API REST conforme aux besoins de l'application mobile\n" +
+              "- suivi de l'avancement des développements du prestataire, organisation de réunions techniques\n" +
+              "- tests fonctionnels de l'application native Android"
+            }
+          ],
+            imgsrc: "kimoce.jpg"
+        },
+        {
+          title: "Ingénieur informatique assistant stagiaire",
+          place: "Kimoce (Mulhouse, France)",
+          dates: "09/2013 à 02/2014",
+          diploma: "Développement d’une application Web en SaaS (Software As A Service)",
+          subDiploma: [
+            { 
+              title: "Démarrage du développement d'une nouvelle application Web en mode SaaS",
+              content: "- formation à la technologie VAADIN, Framework Java EE\n" +
+              "- formation aux technologies utilisées chez Kimoce (Java EE, RMI)\n" +
+              "- participation à la mise en place de l'environnement de développement nécessaire à ce nouveau projet"
+            },
+            { 
+              title: "Conception et développement des premiers modules fonctionnels de l'application",
+              content: "- participation à la conception des différentes couches de l'application\n" +
+              "- participation aux choix techniques inhérents au démarrage d'un projet: base de données, modèle de données, technologies Java EE\n" +
+              "- réalisations de premiers modules sous forme de preuves de concept afin de valider les choix techniques effectués"
+            }
+          ],
+            imgsrc: "kimoce.jpg"
+        },
+        {
+          title: "Technicien informatique stagiaire",
+          place: "SIDEO Bedeville (Fesches le Chatel, France)",
+          dates: "04/2012 à 06/2012",
+          diploma: "Réalisation d’un applicatif en intranet en PhP pour le suivi de la production d'un atelier industriel",
+          subDiploma: [
+            { 
+              title: "Étude et conception d'un applicatif ayant pour but de suivre la production de pièces automobiles",
+              content: "- recherches autour du système d'informations existant: Sybase\n" +
+              "- étude de différents choix techniques possibles\n" +
+              "- choix et mise en place d'une preuve de concept autour d'une application PhP"
+            },
+            { 
+              title: "Développement de l'applicatif PhP de suivi de production des pièces",
+              content: "- développement d'une couche de connexion au système d'information\n" +
+              "- développement d'un générateur de requêtes permettant de créer des rapports d'informations sur les informations voulues\n" +
+              "- développement d'une vue en HTML et Javascript permettant d'afficher les rapports dans l'atelier de production"
+            }
+          ],
+            imgsrc: "sideo.jpg"
+        }
+      ]
+    }
+  },
+  components: {
+    ExperienceStep
+  }
+}
+</script>

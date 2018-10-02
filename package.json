@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0-rc.1",
+    "marked": "^0.5.1",
     "vue": "^2.5.17",
     "vue-material-design-icons": "^2.1.1",
     "vue-router": "^3.0.1",

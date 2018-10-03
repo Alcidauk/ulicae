@@ -8,8 +8,8 @@
         <v-flex>
           <div>
             <h3 class="page-title">{{title}}</h3>
-            <div class="blue-grey--text text--darken-1">{{dates}}</div>
-            <div class="blue-grey--text text--darken-1">{{place}}</div>
+            <div class="teal--text text--darken-2">{{dates}}</div>
+            <div class="teal--text text--darken-2">{{place}}</div>
             <div class="subheading">{{diploma}}</div>
             <div>{{subDiploma}}</div>
           </div>

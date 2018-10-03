@@ -9,8 +9,8 @@
             <v-flex>
               <div>
                 <h3 class="page-title">{{title}}</h3>
-                <div class="teal--text text--darken-4">{{dates}}</div>
-                <div class="teal--text text--darken-4">{{place}}</div>
+                <div class="teal--text text--darken-2">{{dates}}</div>
+                <div class="teal--text text--darken-2">{{place}}</div>
                 <div class="subheading">{{diploma}}</div>
                 
               </div>
@@ -22,8 +22,8 @@
       <v-container grid-list-md>
         <v-layout align-space-around justify-space-around fill-height row wrap>
           <v-flex v-for="(item, index) in subDiploma" :key=index xs6>
-            <v-card class="ma-2 pa-2" color="teal lighten-4">
-              <v-card-title align-center class="pa-2 card-title"><v-icon class="pr-2" large color="teal darken-4">{{item.icon}}</v-icon>{{item.title}}</v-card-title>
+            <v-card class="ma-2" color="teal lighten-4">
+              <v-card-title align-center class="pa-2 card-title"><v-icon class="pr-2" large color="lime accent-1">{{item.icon}}</v-icon>{{item.title}}</v-card-title>
               <v-card-text v-html="compiledMarkdown(item.content)"/>
             </v-card> 
           </v-flex>   
@@ -58,6 +58,7 @@ export default {
 <style scoped>
 .card-title {
   background-color: #4DB6AC;
+  color: #EEFF41;
   font-weight: bold;
 }
 </style>

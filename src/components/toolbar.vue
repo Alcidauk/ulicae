@@ -1,12 +1,12 @@
 <template>
-  <v-toolbar app fixed :clipped-left="true" color="lime lighten-1">
+  <v-toolbar app fixed :clipped-left="true" color="teal darken-1">
     <div class="toolbar-title">
-      <v-toolbar-title v-text="title" class="title-font teal--text text--darken-4"/>
-      <v-toolbar-title class="subtitle-font teal--text text--darken-4">Pierre Rognon</v-toolbar-title>
+      <v-toolbar-title v-text="title" class="title-font lime--text text--accent-2"/>
+      <v-toolbar-title class="subtitle-font lime--text text--accent-1">Pierre Rognon</v-toolbar-title>
     </div>
       <v-toolbar-items justify-space-around>
-        <v-btn :to="{path:'/home'}" flat color="teal darken-4"><v-icon left color="teal lighten-1">mdi-home-outline</v-icon>Accueil</v-btn>
-        <v-btn :to="{path:'/cv'}" flat color="teal darken-4"><v-icon left color="teal lighten-1">mdi-account-card-details</v-icon>CV</v-btn>
+        <v-btn :to="{path:'/home'}" flat color="lime accent-2"><v-icon left color="lime accent-1">mdi-home-outline</v-icon>Accueil</v-btn>
+        <v-btn :to="{path:'/cv'}" flat color="lime accent-2"><v-icon left color="lime accent-1">mdi-account-card-details</v-icon>CV</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
     </v-toolbar>

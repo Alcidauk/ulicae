@@ -14,11 +14,11 @@
 
     <v-layout align-center>
       <v-card v-if=currentKnowledge class="ma-2" color="teal lighten-4" width="100%">
-        <v-card-title class="card-title">
-          <v-avatar class="elevation-5 mr-2 knowledge-avatar">
+        <v-card-title class="pa-2 card-title" color="lime accent-1">
+          <v-avatar size=64 color="lime accent-1" class="elevation-5 mt-1 ml-1 mb-1 mr-3 knowledge-avatar">
             <v-img contain :src="require(`@/assets/${currentKnowledge.imgsrc}`)"/>
           </v-avatar>
-          <h3>{{currentKnowledge.title}}</h3>
+          <h2>{{currentKnowledge.title}}</h2>
         </v-card-title>
         <v-card-text v-html="compiledMarkdown(currentKnowledge.content)"/>
       </v-card>
@@ -120,6 +120,8 @@ export default {
 <style scoped>
 .card-title {
   background-color: #4DB6AC;
+  color: #EEFF41;
+  font-weight: bold;
 }
 .knowledge-avatar {
   background-color: #ffffff;

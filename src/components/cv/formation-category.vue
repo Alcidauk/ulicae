@@ -2,7 +2,7 @@
   <v-layout v-if="selectedPage === currentPage" row>
 
             <v-container>
-                <h1 class="page-title">Formations</h1>
+                <h1 class="mb-2 page-title">Formations</h1>
                 <v-layout column>
                   <FormationStep 
                     title="Université de Technologies de Belfort-Montbéliard" 
@@ -26,12 +26,10 @@
                     subDiploma="spécialité Physique-Chimie"
                     imgsrc="lvh.png"/>
                 </v-layout>
-            </v-container>
 
-            <v-container>
-              <h1 class="page-title">Certifications</h1>
+              <h1 class="mt-5 page-title">Certifications</h1>
 
-              <h3 class="page-title">Certifications linguistiques</h3>
+              <h3 class="mt-2 page-title">Certifications linguistiques</h3>
               <v-layout column>
                 <FormationStep 
                   title="Geothe Institut" 
@@ -49,7 +47,7 @@
                   imgsrc="bulats.png"/>
               </v-layout>
 
-              <h3 class="page-title">Certifications techniques</h3>
+              <h3 class="mt-2 page-title">Certifications techniques</h3>
               <v-layout column>
                 <FormationStep 
                   title="Cisco Certified Network Associate"

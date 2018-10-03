@@ -1,10 +1,14 @@
 <template>
   <v-container>
 
+    <v-btn v-if="!$vuetify.breakpoint.lgAndUp" color="lime lighten-1" fab left @click.stop="permanent = !permanent">
+      <v-icon v-html="permanent ? 'mdi-backburger' : 'mdi-menu'"/>
+    </v-btn>
     <v-navigation-drawer
       class="lime lighten-1"
       :mini-variant="miniVariant"
-      :clipped="$vuetify.breakpoint.lgAndUp"
+      :permanent="permanent"
+      clipped
       fixed
       app>
 
@@ -52,6 +56,7 @@ export default {
   data () {
     return {
       miniVariant: false,
+      permanent: false,
       selectedPage: 'formation',
       drawer: null,
       fixed: false,

@@ -1,6 +1,6 @@
 <template>
-  <v-btn fab large class="knowledge-image" @click.prevent="$emit('update:knowledge', knowledgeName)">
-      <img :src="require(`@/assets/${imgsrc}`)"/>
+  <v-btn fab large class="knowledge-image" @click.prevent="$emit('update:currentKnowledge', knowledge)">
+      <img :src="require(`@/assets/${knowledge.imgsrc}`)"/>
   </v-btn>
 </template>
 
@@ -8,8 +8,7 @@
 export default {
   name: 'Knowledge',
   props: {
-    imgsrc: String,
-    knowledgeName: String
+    knowledge: Object
   }
 }
 </script>

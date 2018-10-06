@@ -5,14 +5,15 @@ import App from './App.vue'
 import VueRouter from 'vue-router'
 
 import Cv from './components/cv/cv'
+import Home from './components/home/home'
+
 
 Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 
-const Bar = { template: '<div>bar</div>' }
 const routes = [
-  { path: '/home', component: Bar },
+  { path: '/home', component: Home },
   { path: '/cv', component: Cv }
 ]
 

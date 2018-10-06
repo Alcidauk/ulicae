@@ -59,6 +59,15 @@ export default {
       currentKnowledge: null,
       knowledges: [
         {
+          title: "Linux",
+          content: "Très bonne aisance avec les environnements Linux.\n" +
+          "+ Utilisation d'une distribution Debian de manière personnelle;\n" +
+          "+ Travail avec des distributions dérivées d'Ubuntu dans le cadre professionnel;\n" +
+          "+ Connaissance des distributions RedHat et dérivées (CentOs, Fedora);\n" +
+          "+ Rudiments dans l'utilisation d'une distribution ArchLinux.",
+          imgsrc: "linux.png"
+        },
+        {
           title: "LaTeX",
           content: "Bonnes connaissances usuelles de ce langage.\n" +
            "+ Rédaction de rapports (stage, cahier de spécifications);\n" +
@@ -184,15 +193,6 @@ export default {
           "+ Utilisation des fonctionnalités de branche;\n" +
           "+ Aisance dans l'utilisatioon d'outils autour de Git: Github, Gitlab.",
           imgsrc: "git.png"
-        },
-        {
-          title: "Linux",
-          content: "Très bonne aisance avec les environnements Linux.\n" +
-          "+ Utilisation d'une distribution Debian de manière personnelle;\n" +
-          "+ Travail avec des distributions dérivées d'Ubuntu dans le cadre professionnel;\n" +
-          "+ Connaissance des distributions RedHat et dérivées (CentOs, Fedora);\n" +
-          "+ Rudiments dans l'utilisation d'une distribution ArchLinux.",
-          imgsrc: "linux.png"
         }
       ]
     }

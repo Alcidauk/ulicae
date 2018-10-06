@@ -57,7 +57,7 @@ export default {
 
 <style scoped>
 .card-title {
-  background-color: #4DB6AC;
+  background-color: #26A69A;
   color: #EEFF41;
   font-weight: bold;
 }

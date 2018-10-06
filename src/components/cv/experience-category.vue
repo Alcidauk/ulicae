@@ -33,7 +33,7 @@ export default {
           title: "Lead technique & ingénieur développement FullStack",
           place: "SKINsoft (Besançon, France)",
           dates: "04/2017 à 07/2018",
-          diploma: "Conception, définition des orientations techniques logicielles, et développement sur les produits SKINsoft",
+          diploma: "Conception, définition des orientations techniques logicielles, et développement d'une suite logicielle de gestion de collections d'œuvres",
           subDiploma: [
             { 
               title: "Développement au sein de la suite logicielle de SKINsoft",
@@ -48,16 +48,17 @@ export default {
               icon: "mdi-flask"
             },
             { 
-              title: "Suivi de la qualité des développements de l'ensemble de l'équipe",
+              title: "Suivi de la qualité des développements de l'ensemble de l'équipe technique",
               content: "- mise en place de revues de code\n" +
-              "- participation à l'élaboration des Sprints",
+              "- participation à l'élaboration des Sprints\n" +
+              "- supervision de la réalisation des tests unitaire et d'intégration",
               icon: "mdi-chart-areaspline"
             },
             { 
               title: "Participation à la relation client",
               content: "- participation à plusieurs auditions lors d'appels d'offres\n" +
               "- intervention chez plusieurs clients dans le cadre de support technique\n" +
-              "- intervention chez plusieurs clients de le cadre du suivi technique de projets",
+              "- collaboration avec les interlocuteurs techniques de clients de le cadre du suivi de projets",
               icon: "mdi-account-multiple"
             }
           ],
@@ -67,7 +68,7 @@ export default {
           title: "Ingénieur développement fullstack",
           place: "SKINsoft (Besançon, France)",
           dates: "08/2015 à 03/2017",
-          diploma: "Conception, spécification et développement sur la suite logicielle de SKINsoft",
+          diploma: "Conception, spécification et développement d'une suite logicielle de gestion de collections d'œuvres",
           subDiploma: [
             { 
               title: "Développement au sein de la suite logicielle de SKINsoft",
@@ -76,8 +77,8 @@ export default {
               icon: "mdi-flask"
             },
             { 
-              title: "Développement et maintenance de l'application mobile SKINreporter",
-              content: "- refactor, maintenance et réalisation d'évolutions de l'application native Android\n" +
+              title: "Développement et maintenance de l'application mobile de récolement d'œuvres SKINreporter",
+              content: "- refonte du code, maintenance et réalisation d'évolutions de l'application native Android\n" +
               "- réalisation d'évolutions sur l'API Rest de la suite SKINsoft\n" +
               "- suivi et finalisation de la relation avec le prestataire en charge du développement de l'application native Android",
               icon: "mdi-cellphone-android"
@@ -90,9 +91,9 @@ export default {
             },
             { 
               title: "Participation à la conception d'une nouvelle architecture logicielle",
-              content: "- réflexion autour d'un choix pérenne de l'architecture existante\n" +
-              "- réalisation d'une étude et de preuves de concepts autour de l'architecture logicielle\n" +
-              "participation à la définition de la nouvelle architecture (from scratch)",
+              content: "- réflexion autour de l'évolution de l'architecture existante\n" +
+              "- réalisation d'une étude et de preuves de concept autour de l'architecture logicielle\n" +
+              "- participation à la définition de la nouvelle architecture (from scratch)",
               icon: "mdi-wall"
             }
           ],
@@ -102,7 +103,7 @@ export default {
           title: "Ingénieur informatique stagiaire",
           place: "SKINsoft (Besançon, France)",
           dates: "02/2015 à 07/2015",
-          diploma: "Développement d'un nouveau produit mobile",
+          diploma: "Développement d'un nouveau produit mobile permettant le récolement des œuvres d'un musée",
           subDiploma: [
             { 
               title: "Réalisation d'une API REST au sein de la plate-forme SKINsoft",
@@ -125,10 +126,10 @@ export default {
           title: "Technicien informatique",
           place: "Kimoce (Mulhouse, France)",
           dates: "07/2014",
-          diploma: "Développement à majorité BackEnd sur une application Web en Java EE (CDD d’un mois, suite au stage d’assistant ingénieur)",
+          diploma: "Développement à majorité Backend sur une application Web en Java EE (CDD d’un mois, suite au stage d’assistant ingénieur)",
           subDiploma: [
             { 
-              title: "Développement d’un module BackEnd en Java",
+              title: "Développement d’un module Backend en Java",
               content: "- développement des couches modèle et présentation d'un nouveau module fonctionnel\n" +
               "- participation au développement de la couche vue à l'aide du Framework VAADIN",
               icon: "mdi-flask"
@@ -166,14 +167,14 @@ export default {
           diploma: "Réalisation d’un applicatif en intranet en PhP pour le suivi de la production d'un atelier industriel",
           subDiploma: [
             { 
-              title: "Étude et conception d'un applicatif ayant pour but de suivre la production de pièces automobiles",
+              title: "Conception d'un applicatif de suivi de production de pièces automobiles",
               content: "- recherches autour du système d'informations existant: Sybase\n" +
               "- étude de différents choix techniques possibles\n" +
               "- choix et mise en place d'une preuve de concept autour d'une application PhP",
               icon: "mdi-wall"
             },
             { 
-              title: "Développement de l'applicatif PhP de suivi de production des pièces",
+              title: "Développement de l'applicatif PhP de suivi de production",
               content: "- développement d'une couche de connexion au système d'information\n" +
               "- développement d'un générateur de requêtes permettant de créer des rapports d'informations sur les informations voulues\n" +
               "- développement d'une vue en HTML et Javascript permettant d'afficher les rapports dans l'atelier de production",

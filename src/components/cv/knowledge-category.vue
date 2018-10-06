@@ -3,14 +3,16 @@
     <h1 class="page-title">Compétences</h1>
 
     <v-layout column>
-      <h2 class="mt-5">Technologies</h2>
+      <h2 class="mt-5">Technologiques</h2>
 
-    <v-layout row align-center class="ma-5">
+   <v-container grid-list-md>
+    <v-layout row wrap align-center class="ma-5">
       <Knowledge v-for="(knowledge, index) in knowledges" 
       :key=index
       :knowledge=knowledge
-      v-on:update:currentKnowledge="handleIt"/>
+      v-on:update:currentKnowledge="handleIt" xs1/>
     </v-layout>
+   </v-container>
 
     <v-layout align-center>
       <v-card v-if=currentKnowledge class="ma-2" color="teal lighten-4" width="100%">
@@ -110,6 +112,87 @@ export default {
           "+ Connaissances autour du système de widgets proposés par Vaadin;\n" +
           "+ Utilisation du pattern recommandé par ce framework: MVVP (Modèle-Vue Vue-Présentation).",
           imgsrc: "vaadin.png"
+        },
+        {
+          title: "Docker",
+          content: "Aisance dans l'utilisation de cette technologie.\n" +
+          "+ Utilisation dans le cadre d'un environnement de développement (SKINsoft);\n" +
+          "+ Utilisation sur un serveur personnel en production;\n" +
+          "+ Maîtrise de l'utilisation de conteneurs existants, de la création de nouveaux conteneurs, de la création d'une image;\n" +
+          "+ Maîtrise de la surcouche Docker Compose.",
+          imgsrc: "docker.png"
+        },
+        {
+          title: "Vue.js",
+          content: "Connaissances des fondements de ce framework.\n" +
+          "+ Développements ponctuels de composants UI;\n" +
+          "+ Connaissance et compréhension de la notion de modèle.",
+          imgsrc: "vue.png"
+        },
+        {
+          title: "Shell / Bash",
+          content: "Très bonne aisance dans l'usage d'une ligne de commandes. Des bases dans le développement de script bash.\n" +
+          "+ Utilisation quotidienne du terminal dans le cadre de l'environnement de développement;\n" +
+          "+ Rédaction de scripts shell utilitaires de manière occasionnelle.",
+          imgsrc: "shell.png"
+        },
+        {
+          title: "ExtJS",
+          content: "Bonnes connaissances autour du framework\n" +
+          "+ Utilisation quotidienne dans le cadre de développements d'une version datée (2.3);\n" +
+          "+ Bonne compréhension des composants principaux proposés par ExtJS\n;" +
+          "+ Aisance dans les notions propres à ExtJS (extension de composants, configuration, évènements).",
+          imgsrc: "extjs.png"
+        },
+        {
+          title: "Android",
+          content: "Aisance dans le développement natif sur cette plateforme\n" +
+          "+ Reprise de plusieurs applicatifs Android;\n" +
+          "+ Socle de connaissances sur les notions d'une application Android (Activité, Cycle de vie);\n" +
+          "+ Connaissances de base dans les composants graphiques disponibles.",
+          imgsrc: "android.png"
+        },
+        {
+          title: "PhP",
+          content: "Rudiments et développements partiels sur d'anciennes versions.\n" +
+          "+ Compréhension de la notion de langage script;\n" +
+          "+ Connaissances de base sur le framework Symfony et son ORM Doctrine.",
+          imgsrc: "php.png"
+        },
+        {
+          title: "Javascript",
+          content: "Connaissances à travers l'utlisation de framework tels que Vue.js et ExtJS.\n" +
+          "+ Développement régulier de base;\n" +
+          "+ Rudiments sur les différentes versions de JS (ES2016).",
+          imgsrc: "javascript.png"
+        },
+        {
+          title: "Python",
+          content: "Rudiments et développements sur d'anciennes versions.\n" +
+          "+ Développement de quelques scripts;\n" +
+          "+ Développement d'une application avec interface graphique en GTK 2.",
+          imgsrc: "python.png"
+        },
+        {
+          title: "Svn",
+          content: "Utilisation aisée de ce gestionnaire de versions.",
+          imgsrc: "svn.png"
+        },
+        {
+          title: "Git",
+          content: "Bonnes connaissances dans l'utilisation de ce gestionnaire de versions.\n" +
+          "+ Utilisation des fonctionnalités de branche;\n" +
+          "+ Aisance dans l'utilisatioon d'outils autour de Git: Github, Gitlab.",
+          imgsrc: "git.png"
+        },
+        {
+          title: "Linux",
+          content: "Très bonne aisance avec les environnements Linux.\n" +
+          "+ Utilisation d'une distribution Debian de manière personnelle;\n" +
+          "+ Travail avec des distributions dérivées d'Ubuntu dans le cadre professionnel;\n" +
+          "+ Connaissance des distributions RedHat et dérivées (CentOs, Fedora);\n" +
+          "+ Rudiments dans l'utilisation d'une distribution ArchLinux.",
+          imgsrc: "linux.png"
         }
       ]
     }

@@ -57,7 +57,7 @@ export default {
     return {
       miniVariant: false,
       permanent: false,
-      selectedPage: 'formation',
+      selectedPage: 'experiences',
       drawer: null,
       fixed: false,
       items: [

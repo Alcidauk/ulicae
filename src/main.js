@@ -16,7 +16,7 @@ const routes = [
   { path: '/cv', component: Cv }
 ]
 
-const router = new VueRouter({routes})
+const router = new VueRouter({routes, mode: 'history'})
 
 new Vue({
   render: h => h(App),

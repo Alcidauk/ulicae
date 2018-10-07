@@ -22,14 +22,6 @@ export default {
     currentPage: String,
     selectedPage: String
   },
-  methods: {
-    handleIt: function (item) {
-      this.currentKnowledge = item
-    },
-    compiledMarkdown: function (item) {
-      return marked(item, { sanitize: true })
-    }
-  },
   components: {
     KnowledgePart
   },
@@ -172,6 +164,60 @@ export default {
           "+ Utilisation des fonctionnalités de branche;\n" +
           "+ Aisance dans l'utilisatioon d'outils autour de Git: Github, Gitlab.",
           imgsrc: "git.png"
+        }
+      ],
+      proKnowledges: [
+        {
+          title: "Analyse fonctionnelle et développement",
+          content: "Compétences dans la gestion de développements fonctionnels.\n" +
+          "+ Capacité à chiffrer rapidement une demande fonctionnelle;\n" +
+          "+ Habilité à spécifier et à découper une demande fonctionnelle en tâches techniques logiques;\n" +
+          "+ Aisance dans la remontée d'alerte lors d'imprévus sur des développements.",
+          imgsrc: null,
+          icon: "mdi-thought-bubble"
+        },
+        {
+          title: "Méthode de travail",
+          content: "Rigueur et suivi dans les développements réalisés.\n" +
+          "+ Connaissance d'outils tels que Trello ou Jira;\n" +
+          "+ Habitude du bon suivi des développements;\n" +
+          "+ Compétences dans l'intégration continue et le déploiement de livrables.",
+          imgsrc: null,
+          icon: "mdi-code-not-equal-variant"
+        },
+        {
+          title: "Travail en équipe",
+          content: "Habitué à travailler au sein d'équipes de développement.\n" +
+          "+ Aisance dans l'organisation Agile d'une équipe;\n" +
+          "+ Pratique régulière du binômage sur un poste de travail;\n" +
+          "+ Habitude à mener un projet fonctionnel à plusieurs.",
+          imgsrc: null,
+          icon: "mdi-account-group"
+        },
+        {
+          title: "Formation d'autres développeurs",
+          content: "Compétent dans le suivi et la montée en compétence des développeurs.\n" +
+          "+ Formation d'un stagiaire lors d'une précédente expérience professionnelle;\n" +
+          "+ Suivi de la qualité du code d'une équipe de développeurs;\n" +
+          "+ Force de proposition sur l'amélioration des processus de développement.",
+          imgsrc: null,
+          icon: "mdi-school"
+        },
+        {
+          title: "Intervention auprès de clients",
+          content: "Aisance dans la communication avec les clients.\n" +
+          "+ Habitude de dialogue technique avec des interlocuteurs techniciens;\n" +
+          "+ Capacité à vulgariser le fonctionnement technique d'applicatifs.",
+          imgsrc: null,
+          icon: "mdi-account-multiple-check"
+        },
+        {
+          title: "Rédaction",
+          content: "Bonne maîtrise de l'écrit.\n" +
+          "+ Capacité à rédiger une spécification clairement;\n" +
+          "+ Compétence dans la rédaction d'un manuel utilisateur ou d'un manuel technique.",
+          imgsrc: null,
+          icon: "mdi-pencil"
         }
       ]
     }

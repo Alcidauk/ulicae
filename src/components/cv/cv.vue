@@ -13,7 +13,7 @@
       app>
 
       <v-btn icon align-center left @click.stop="miniVariant = !miniVariant">
-        <v-icon x-large color="lime accent-1" v-html="miniVariant ? 'mdi-menu-right' : 'mdi-menu-left'"/>
+        <v-icon large color="lime accent-1" v-html="miniVariant ? 'mdi-menu-right' : 'mdi-menu-left'"/>
       </v-btn>
       <v-list>
         <v-list-tile
@@ -34,6 +34,7 @@
     <FormationCategory currentPage="formation" :selectedPage="selectedPage"/>
     <ExperienceCategory currentPage="experiences" :selectedPage="selectedPage"/>
     <KnowledgeCategory currentPage="knowledges" :selectedPage="selectedPage"/>
+    <HobbyCategory currentPage="hobbies" :selectedPage="selectedPage"/>
 
   </v-container>
 </template>
@@ -42,6 +43,7 @@
 import FormationCategory from './formation-category'
 import KnowledgeCategory from './knowledge-category'
 import ExperienceCategory from './experience-category'
+import HobbyCategory from './hobby-category'
 
 export default {
   name: 'Cv',
@@ -51,7 +53,8 @@ export default {
   components: {
     FormationCategory,
     KnowledgeCategory,
-    ExperienceCategory
+    ExperienceCategory,
+    HobbyCategory
   },
   data () {
     return {
@@ -78,7 +81,8 @@ export default {
       },
       {
         icon: 'mdi-sticker-emoji',
-        title: 'Loisirs'
+        title: 'Centres d\'intérêt',
+        currentPage: 'hobbies'
       },
       {
         icon: 'mdi-information-variant',

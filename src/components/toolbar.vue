@@ -6,7 +6,9 @@
     </div>
       <v-toolbar-items justify-space-around>
         <v-btn :to="{path:'/home'}" flat color="lime accent-2"><v-icon left color="lime accent-1">mdi-home-outline</v-icon>Accueil</v-btn>
-        <v-btn :to="{path:'/cv'}" flat color="lime accent-2"><v-icon left color="lime accent-1">mdi-account-card-details</v-icon>CV</v-btn>
+        <v-btn :to="{path:'/cv'}" flat color="lime accent-2"><v-icon left color="lime accent-1">mdi-notebook</v-icon>CV</v-btn>
+        <v-btn :to="{path:'/notes'}" flat color="lime accent-2"><v-icon left color="lime accent-1">mdi-note-text</v-icon>Notes</v-btn>
+        <v-btn :to="{path:'/portfolio'}" flat color="lime accent-2"><v-icon left color="lime accent-1">mdi-folder-image</v-icon>Albums</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
     </v-toolbar>

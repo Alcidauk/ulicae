@@ -13,8 +13,8 @@
 
     <v-layout align-center>
       <v-card v-if=currentKnowledge class="ma-2" color="teal lighten-4" width="100%">
-        <v-card-title class="pa-2 card-title" color="lime accent-1">
-          <v-avatar size=64 color="lime accent-1" class="elevation-5 mt-1 ml-1 mb-1 mr-3 knowledge-avatar">
+        <v-card-title class="pa-2 card-title" color="light-green accent-1">
+          <v-avatar size=64 color="light-green accent-1" class="elevation-5 mt-1 ml-1 mb-1 mr-3 knowledge-avatar">
             <v-img v-if="currentKnowledge.imgsrc" contain :src="require(`@/assets/${currentKnowledge.imgsrc}`)"/>
             <v-icon large v-if="currentKnowledge.icon" color="teal lighten-1">{{currentKnowledge.icon}}</v-icon>
           </v-avatar>
@@ -63,7 +63,7 @@ export default {
 <style scoped>
 .card-title {
   background-color: #4DB6AC;
-  color: #EEFF41;
+  color: #B2FF59;
   font-weight: bold;
 }
 .knowledge-avatar {

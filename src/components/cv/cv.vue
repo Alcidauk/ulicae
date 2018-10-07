@@ -13,7 +13,7 @@
       app>
 
       <v-btn icon align-center left @click.stop="miniVariant = !miniVariant">
-        <v-icon large color="lime accent-1" v-html="miniVariant ? 'mdi-menu-right' : 'mdi-menu-left'"/>
+        <v-icon large color="light-green accent-1" v-html="miniVariant ? 'mdi-menu-right' : 'mdi-menu-left'"/>
       </v-btn>
       <v-list>
         <v-list-tile
@@ -22,10 +22,10 @@
           :key="i"
           @click.prevent="selectedPage = item.currentPage">
           <v-list-tile-action>
-            <v-icon color="lime accent-1" v-html="item.icon"/>
+            <v-icon color="light-green accent-1" v-html="item.icon"/>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title class="lime--text text--accent-2" v-text="item.title"/>
+            <v-list-tile-title class="light-green--text text--accent-2" v-text="item.title"/>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>

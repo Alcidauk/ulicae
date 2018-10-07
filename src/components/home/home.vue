@@ -10,7 +10,7 @@
 
         <v-flex xs4>
           <v-flex justify-center layout>
-            <v-btn :to="{path:'/cv'}" fab large color="lime accent-2">
+            <v-btn :to="{path:'/cv'}" fab large color="light-green accent-2">
               <v-icon contain large color="teal lighten-1">mdi-notebook</v-icon>
             </v-btn>
           </v-flex>
@@ -21,7 +21,7 @@
 
         <v-flex xs4>
           <v-flex justify-center layout>
-            <v-btn :to="{path:'/notes'}" fab large color="lime accent-2">
+            <v-btn :to="{path:'/notes'}" fab large color="light-green accent-2">
               <v-icon contain large color="teal lighten-1">mdi-note-text</v-icon>
             </v-btn>
           </v-flex>
@@ -32,7 +32,7 @@
 
         <v-flex xs4>
           <v-flex justify-center layout>
-            <v-btn :to="{path:'/portfolio'}" fab large color="lime accent-2">
+            <v-btn :to="{path:'/portfolio'}" fab large color="light-green accent-2">
               <v-icon contain large color="teal lighten-1">mdi-folder-image</v-icon>
             </v-btn>
           </v-flex>

@@ -26,7 +26,7 @@
               <v-card-title class="pa-3 card-title">
                   <v-layout row align-center>
                     <v-flex xs2>
-                      <v-icon large color="lime accent-1">{{item.icon}}</v-icon>
+                      <v-icon large color="light-green accent-1">{{item.icon}}</v-icon>
                     </v-flex>
                     <v-flex xs10>{{item.title}}</v-flex>
                   </v-layout>
@@ -65,7 +65,7 @@ export default {
 <style scoped>
 .card-title {
   background-color: #26A69A;
-  color: #EEFF41;
+  color: #B2FF59;
   font-weight: bold;
 }
 </style>

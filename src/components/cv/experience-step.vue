@@ -23,7 +23,14 @@
         <v-layout align-space-around justify-space-around fill-height row wrap>
           <v-flex v-for="(item, index) in subDiploma" :key=index xs6>
             <v-card class="ma-2" color="teal lighten-4">
-              <v-card-title align-center class="pa-2 card-title"><v-icon class="pr-2" large color="lime accent-1">{{item.icon}}</v-icon>{{item.title}}</v-card-title>
+              <v-card-title class="pa-3 card-title">
+                  <v-layout row align-center>
+                    <v-flex xs2>
+                      <v-icon large color="lime accent-1">{{item.icon}}</v-icon>
+                    </v-flex>
+                    <v-flex xs10>{{item.title}}</v-flex>
+                  </v-layout>
+              </v-card-title>
               <v-card-text v-html="compiledMarkdown(item.content)"/>
             </v-card> 
           </v-flex>   

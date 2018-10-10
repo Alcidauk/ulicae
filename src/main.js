@@ -9,7 +9,13 @@ import Home from './components/home/home'
 import Note from './components/note/note'
 import Portfolio from './components/portfolio/portfolio'
 
+import VeeValidate, { Validator } from 'vee-validate';
+import fr from 'vee-validate/dist/locale/fr';
+
 Vue.use(VueRouter)
+Vue.use(VeeValidate);
+
+Validator.localize('fr', fr);
 
 Vue.config.productionTip = false
 

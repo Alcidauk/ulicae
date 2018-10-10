@@ -28,6 +28,18 @@
             <v-list-tile-title class="light-green--text text--accent-2" v-text="item.title"/>
           </v-list-tile-content>
         </v-list-tile>
+
+        <v-list-tile
+          href="CV_website.pdf" 
+          target="#"
+          key="cv">
+          <v-list-tile-action>
+            <v-icon color="light-green accent-1">mdi-file-pdf-box</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-content>
+            <v-list-tile-title class="light-green--text text--accent-2">CV au format PDF</v-list-tile-title>
+          </v-list-tile-content>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
 
@@ -35,6 +47,7 @@
     <ExperienceCategory currentPage="experiences" :selectedPage="selectedPage"/>
     <KnowledgeCategory currentPage="knowledges" :selectedPage="selectedPage"/>
     <HobbyCategory currentPage="hobbies" :selectedPage="selectedPage"/>
+    <LinkCategory currentPage="links" :selectedPage="selectedPage"/>
 
   </v-container>
 </template>
@@ -44,6 +57,7 @@ import FormationCategory from './formation-category'
 import KnowledgeCategory from './knowledge-category'
 import ExperienceCategory from './experience-category'
 import HobbyCategory from './hobby-category'
+import LinkCategory from './link-category'
 
 export default {
   name: 'Cv',
@@ -54,7 +68,8 @@ export default {
     FormationCategory,
     KnowledgeCategory,
     ExperienceCategory,
-    HobbyCategory
+    HobbyCategory,
+    LinkCategory
   },
   data () {
     return {
@@ -86,7 +101,8 @@ export default {
       },
       {
         icon: 'mdi-information-variant',
-        title: 'Contact'
+        title: 'Contact',
+        currentPage: 'links'
       }]     
     }
   }

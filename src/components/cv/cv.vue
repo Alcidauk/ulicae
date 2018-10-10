@@ -30,14 +30,15 @@
         </v-list-tile>
 
         <v-list-tile
+          style="background-color: #D32F2F;"
           href="CV_website.pdf" 
           target="#"
           key="cv">
           <v-list-tile-action>
-            <v-icon color="error darken-2">mdi-file-pdf-box</v-icon>
+            <v-icon class="secondary--text">mdi-file-pdf-box</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title class="error--text text--darken-2">CV au format PDF</v-list-tile-title>
+            <v-list-tile-title class="secondary--text text--lighten-2">CV au format PDF</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>

@@ -12,18 +12,18 @@
   </v-container>
 
     <v-layout align-center>
-      <v-card v-if=currentKnowledge class="ma-2" color="teal lighten-4" width="100%">
-        <v-card-title class="pa-2 card-title" color="light-green accent-1">
-          <v-avatar size=64 color="light-green accent-1" class="elevation-5 mt-1 ml-1 mb-1 mr-3 knowledge-avatar">
+      <v-card v-if=currentKnowledge class="ma-2" color="primary lighten-4" width="100%">
+        <v-card-title class="pa-2 card-title">
+          <v-avatar size=64 color="primary accent-1" class="elevation-5 mt-1 ml-1 mb-1 mr-3 knowledge-avatar">
             <v-img v-if="currentKnowledge.imgsrc" contain :src="require(`@/assets/${currentKnowledge.imgsrc}`)"/>
-            <v-icon large v-if="currentKnowledge.icon" color="teal lighten-1">{{currentKnowledge.icon}}</v-icon>
+            <v-icon large v-if="currentKnowledge.icon" color="secondary lighten-1">{{currentKnowledge.icon}}</v-icon>
           </v-avatar>
-          <h2>{{currentKnowledge.title}}</h2>
+          <h2 class="secondary--text text--lighten-1">{{currentKnowledge.title}}</h2>
         </v-card-title>
         <v-card-text v-html="compiledMarkdown(currentKnowledge.content)"/>
       </v-card>
 
-      <v-card v-if=!currentKnowledge class="ma-2" color="teal lighten-4" width="100%">Cliquez sur l'une des icônes.</v-card>
+      <v-card v-if=!currentKnowledge class="ma-2" color="primary lighten-4" width="100%">Cliquez sur l'une des icônes.</v-card>
     </v-layout>
 
   </v-layout>
@@ -62,8 +62,7 @@ export default {
 
 <style scoped>
 .card-title {
-  background-color: #4DB6AC;
-  color: #B2FF59;
+  background-color: #009688;
   font-weight: bold;
 }
 .knowledge-avatar {

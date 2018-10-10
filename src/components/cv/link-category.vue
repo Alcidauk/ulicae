@@ -5,7 +5,7 @@
                 <h1 class="mb-2 page-title">Contact</h1>
 
                 <v-layout column>
-                  <h3 class="mt-2 page-title">Laisser un message</h3>
+                  <h3 class="mt-2 primary--text text--lighten-1">Laisser un message</h3>
                   <v-form v-if="!sended">
                     <v-text-field
                       v-validate="'required'"
@@ -32,6 +32,7 @@
                       :counter="2000"
                       label="Message"/>
                     <v-btn
+                      color="primary"
                       :disabled="errors.length === 0"
                       @click="submit">Envoyer</v-btn>
                   </v-form>

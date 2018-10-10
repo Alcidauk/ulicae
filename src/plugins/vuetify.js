@@ -6,10 +6,11 @@ import colors from 'vuetify/es5/util/colors'
 
 Vue.use(Vuetify, {
   iconfont: 'mdi',
-    theme: {
-      primary: colors.lime.lighten1, 
-      secondary: colors.teal.darken4, 
-      accent: colors.teal.lighten1 
-    }
+  theme: {
+    primary: colors.teal.darken3,
+    secondary: '#C19A6B',
+    accent: colors.teal.accent4,
+    error: colors.red.accent2
+  }
 })
 

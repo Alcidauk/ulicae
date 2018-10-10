@@ -1,11 +1,11 @@
 <template>
   <v-container>
 
-    <v-btn v-if="!$vuetify.breakpoint.lgAndUp" color="teal lighten-1" fab left @click.stop="permanent = !permanent">
-      <v-icon v-html="permanent ? 'mdi-backburger' : 'mdi-menu'"/>
+    <v-btn v-if="!$vuetify.breakpoint.lgAndUp" color="primary lighten-1" fab left @click.stop="permanent = !permanent">
+      <v-icon color="secondary" v-html="permanent ? 'mdi-backburger' : 'mdi-menu'"/>
     </v-btn>
     <v-navigation-drawer
-      class="teal lighten-1"
+      class="primary lighten-1"
       :mini-variant="miniVariant"
       :permanent="permanent"
       clipped
@@ -13,7 +13,7 @@
       app>
 
       <v-btn icon align-center left @click.stop="miniVariant = !miniVariant">
-        <v-icon large color="light-green accent-1" v-html="miniVariant ? 'mdi-menu-right' : 'mdi-menu-left'"/>
+        <v-icon large color="secondary" v-html="miniVariant ? 'mdi-menu-right' : 'mdi-menu-left'"/>
       </v-btn>
       <v-list>
         <v-list-tile
@@ -22,10 +22,10 @@
           :key="i"
           @click.prevent="selectedPage = item.currentPage">
           <v-list-tile-action>
-            <v-icon color="light-green accent-1" v-html="item.icon"/>
+            <v-icon color="secondary" v-html="item.icon"/>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title class="light-green--text text--accent-2" v-text="item.title"/>
+            <v-list-tile-title class="secondary--text text--lighten-2" v-text="item.title"/>
           </v-list-tile-content>
         </v-list-tile>
 
@@ -34,10 +34,10 @@
           target="#"
           key="cv">
           <v-list-tile-action>
-            <v-icon color="light-green accent-1">mdi-file-pdf-box</v-icon>
+            <v-icon color="error darken-2">mdi-file-pdf-box</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title class="light-green--text text--accent-2">CV au format PDF</v-list-tile-title>
+            <v-list-tile-title class="error--text text--darken-2">CV au format PDF</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
       </v-list>

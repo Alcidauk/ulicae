@@ -7,8 +7,8 @@
       <v-card-title primary-title>
         <div>
           <h3 class="page-title">{{title}}</h3>
-          <div class="teal--text text--darken-2 subheading">{{description}}</div>
-          <div class="pt-3 teal--text text--lighten-1 caption">{{subDescription}}</div>
+          <div class="primary--text subheading">{{description}}</div>
+          <div class="pt-3 primary--text text--lighten-1 caption">{{subDescription}}</div>
         </div>
       </v-card-title>
   </v-card>

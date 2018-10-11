@@ -37,7 +37,7 @@
             </v-btn>
           </v-flex>
           <v-flex justify-center layout class="pt-3">
-            <h3>Des photos d'un peu partout</h3>
+            <h3>Des photos</h3>
           </v-flex>
         </v-flex>
 

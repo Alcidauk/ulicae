@@ -51,7 +51,7 @@ export default {
               title: "Suivi de la qualité des développements de l'ensemble de l'équipe technique",
               content: "- mise en place de revues de code\n" +
               "- participation à l'élaboration des Sprints\n" +
-              "- supervision de la réalisation des tests unitaire et d'intégration",
+              "- supervision de la réalisation des tests unitaires et d'intégration",
               icon: "mdi-chart-areaspline"
             },
             { 
@@ -107,7 +107,7 @@ export default {
           subDiploma: [
             { 
               title: "Réalisation d'une API REST au sein de la plate-forme SKINsoft",
-              content: "- recherche d'une solution technique et réalisation de preuves de concepts pour le développement d'une API REST en Java\n" +
+              content: "- recherche d'une solution technique et réalisation de preuves de concept pour le développement d'une API REST en Java\n" +
               "- développement d'un tiers se connectant à la plate-forme SKINsoft pour mettre à disposition des données au sein d'une API REST\n" +
               "- réalisation d'une documentation technique autour de l'utilisation de l'API REST et maintenance de celle-ci",
               icon: "mdi-flask"

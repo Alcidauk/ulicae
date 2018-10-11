@@ -47,7 +47,7 @@ export default {
         },
         {
           title: "Java",
-          content: "Développement de nombreux projets au cours d'études, de stages et d'emploi.\n\n" +
+          content: "Développement de nombreux projets au cours d'études, de stages et d'emplois.\n\n" +
           "+ Connaissances autour des versions 6 à 8;\n" +
           "+ Utilisation de nombreuses librairies (Guava, Commons IO/Utils, Lombok, etc.);\n" +
           "+ Rédaction de tests unitaires avec JUnit, de tests d'intégration pour les API REST avec RestAssured;\n" +
@@ -65,10 +65,10 @@ export default {
         {
           title: "Spring",
           content: "Bonne maîtrise de nombreux pans de ce framework.\n" +
-          "+ Utilisation de la partie de lien avec les bases de données (Spring Data);\n" +
+          "+ À l'aise avec Spring Data, la librairie permettant de dialoguer avec une base de données;\n" +
           "+ Utilisation de Spring Boot;\n" +
           "+ Connaissances autour des fonctionnalités de sécurisation des applicatifs (Spring Security);\n" +
-          "+ Maîtrise de la génération d'un API Rest à l'aide de Spring.",
+          "+ Maîtrise de la génération d'une API Rest à l'aide de Spring.",
           imgsrc: "spring.png"
         },
         {
@@ -81,8 +81,8 @@ export default {
         {
           title: "Nuxeo",
           content: "Très bonne connaissance de cette Gestion Électronique de Documents.\n" +
-          "+ Maîtrise de la notion de stockage sous forme de documents (types, schémas, descrption de schémas en XSD);\n" +
-          "+ Compréhension du système de contribution à une application Nuxeo (composants OSGi, contribution XML, services);\n" +
+          "+ Maîtrise de la notion de stockage sous forme de documents (types, schémas, description de schémas en XSD);\n" +
+          "+ Compréhension du système de contribution à une application Nuxeo (composants OSGi, contributions XML, services);\n" +
           "+ Connaissances autour de l'interface graphique proposée par Nuxeo et développée en JSF.",
           imgsrc: "nuxeo.png"
         },
@@ -118,15 +118,15 @@ export default {
         },
         {
           title: "ExtJS",
-          content: "Bonnes connaissances autour du framework\n" +
-          "+ Utilisation quotidienne dans le cadre de développements d'une version datée (2.3);\n" +
-          "+ Bonne compréhension des composants principaux proposés par ExtJS\n;" +
+          content: "Bonnes connaissances autour du framework.\n" +
+          "+ Utilisation quotidienne dans le cadre de développements sur une ancienne version (2.3);\n" +
+          "+ Bonne compréhension des composants principaux proposés par ExtJS;\n" +
           "+ Aisance dans les notions propres à ExtJS (extension de composants, configuration, évènements).",
           imgsrc: "extjs.png"
         },
         {
           title: "Android",
-          content: "Aisance dans le développement natif sur cette plateforme\n" +
+          content: "Aisance dans le développement natif sur cette plateforme.\n" +
           "+ Reprise de plusieurs applicatifs Android;\n" +
           "+ Socle de connaissances sur les notions d'une application Android (Activité, Cycle de vie);\n" +
           "+ Connaissances de base dans les composants graphiques disponibles.",
@@ -142,7 +142,7 @@ export default {
         {
           title: "Javascript",
           content: "Connaissances à travers l'utlisation de framework tels que Vue.js et ExtJS.\n" +
-          "+ Développement régulier de base;\n" +
+          "+ Développement régulier dans ce langage;\n" +
           "+ Rudiments sur les différentes versions de JS (ES2016).",
           imgsrc: "javascript.png"
         },
@@ -162,7 +162,7 @@ export default {
           title: "Git",
           content: "Bonnes connaissances dans l'utilisation de ce gestionnaire de versions.\n" +
           "+ Utilisation des fonctionnalités de branche;\n" +
-          "+ Aisance dans l'utilisatioon d'outils autour de Git: Github, Gitlab.",
+          "+ Aisance dans l'utilisation d'outils satellites à Git: Github, Gitlab.",
           imgsrc: "git.png"
         }
       ],
@@ -172,7 +172,7 @@ export default {
           content: "Compétences dans la gestion de développements fonctionnels.\n" +
           "+ Capacité à chiffrer rapidement une demande fonctionnelle;\n" +
           "+ Habilité à spécifier et à découper une demande fonctionnelle en tâches techniques logiques;\n" +
-          "+ Aisance dans la remontée d'alerte lors d'imprévus sur des développements.",
+          "+ Aisance dans la remontée d'alertes lors d'imprévus sur des développements.",
           imgsrc: null,
           icon: "mdi-thought-bubble"
         },
@@ -196,7 +196,7 @@ export default {
         },
         {
           title: "Formation d'autres développeurs",
-          content: "Compétent dans le suivi et la montée en compétence des développeurs.\n" +
+          content: "Compétent dans le suivi et la montée en compétences des développeurs.\n" +
           "+ Formation d'un stagiaire lors d'une précédente expérience professionnelle;\n" +
           "+ Suivi de la qualité du code d'une équipe de développeurs;\n" +
           "+ Force de proposition sur l'amélioration des processus de développement.",
@@ -214,8 +214,8 @@ export default {
         {
           title: "Rédaction",
           content: "Bonne maîtrise de l'écrit.\n" +
-          "+ Capacité à rédiger une spécification clairement;\n" +
-          "+ Compétence dans la rédaction d'un manuel utilisateur ou d'un manuel technique.",
+          "+ Capacité à rédiger clairement des documents techniques;\n" +
+          "+ À l'aise dans la correspondance écrite avec un client.",
           imgsrc: null,
           icon: "mdi-pencil"
         }

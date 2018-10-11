@@ -15,7 +15,7 @@
                 class="ma-2 portfolio-avatar"
                 v-for="(item,i) in images"
                 :key="i" 
-                :src="require(`@/assets/portfolio/${code}/${item}.jpg`)"/>
+                :src="require(`@/assets/portfolio/${code}/${item}_light.jpg`)"/>
           </viewer>
         
         </v-layout>

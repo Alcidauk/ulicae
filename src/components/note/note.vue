@@ -47,8 +47,7 @@ export default {
   },
   data () {
     return { 
-      notes: [],
-      errors: []
+      notes: []
     }
   }
 }

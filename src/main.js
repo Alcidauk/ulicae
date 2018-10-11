@@ -13,6 +13,11 @@ import PortfolioCaroussel from './components/portfolio/portfolio-caroussel'
 import VeeValidate, { Validator } from 'vee-validate';
 import fr from 'vee-validate/dist/locale/fr';
 
+import 'viewerjs/dist/viewer.css'
+import Viewer from 'v-viewer'
+
+Vue.use(Viewer)
+
 Vue.use(VueRouter)
 Vue.use(VeeValidate);
 

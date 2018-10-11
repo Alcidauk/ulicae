@@ -11,7 +11,7 @@
     </v-layout>
   </v-container>
 
-    <v-layout align-center>
+    <v-layout>
       <v-card v-if=currentKnowledge class="ma-2" color="primary lighten-4" width="100%">
         <v-card-title class="pa-2 card-title">
           <v-avatar size=64 color="primary accent-1" class="elevation-5 mt-1 ml-1 mb-1 mr-3 knowledge-avatar">

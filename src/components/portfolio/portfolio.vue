@@ -8,29 +8,26 @@
         </v-flex>
 
           <v-container grid-list-md>
-            <v-layout justify-center row wrap class="mb-2">
-
-              <v-flex v-for="(item,i) in portfolios" :key=i>
-                <v-avatar contain size=64>
-                    <v-img
-                      :src="require(`@/assets/portfolio/${item.code}/1.jpg`)"
-                      aspect-ratio="1">
-                      <v-layout
-                        slot="placeholder"
-                        fill-height
-                        align-center
-                        justify-center
-                        ma-0>
-                        <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                      </v-layout>
-                    </v-img>
+              <v-layout justify-center row wrap class="mb-2">
+              <router-link :to="'/portfolio/' + item.code" v-for="(item,i) in portfolios" :key=i>
+                  <v-avatar contain size=64>
+                      <v-img
+                        :src="require(`@/assets/portfolio/${item.code}/1.jpg`)"
+                        aspect-ratio="1">
+                        <v-layout
+                          slot="placeholder"
+                          fill-height
+                          align-center
+                          justify-center
+                          ma-0>
+                          <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                        </v-layout>
+                      </v-img>
                   </v-avatar>
-                  <v-layout>
-                    <router-link :to="'/portfolio/' + item.code">{{item.name}}</router-link>
-                  </v-layout>
-              </v-flex>
+                  <v-layout justify-center>{{item.name}}</v-layout>
+                </router-link>
 
-            </v-layout>
+              </v-layout>
           </v-container>
           
           <router-view xs12></router-view>

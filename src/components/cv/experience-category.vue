@@ -30,6 +30,39 @@ export default {
     return {
       experiences: [
         {
+          title: "Ingénieur développement FullStack",
+          place: "CN Films (Paris, France)",
+          dates: "depuis 12/2018",
+          diploma: "Développement d'un ensemble de produits à destination des distributeurs et exploitants dans le domaine du cinéma",
+          subDiploma: [
+            { 
+              title: "Conception et développement d'une nouvelle version de Cinego Distri",
+              content: "- conception et développement \"from scratch\" d'un nouveau Frontend, en Angular 2 (versions 7 et supérieures)\n" +
+              "- refonte du coeur technique Backend afin de disposer d'une API REST",
+              icon: "fa-flask"
+            },
+            { 
+              title: "Développement sur les différents produits existants proposés par CN Films",
+              content: "- développement Backend du coeur applicatif sur plate-forme Python, à l'aide des framework Pyramid et TurboGears\n" +
+              "- développement de templates en Frontend",
+              icon: "fa-industry"
+            },
+            { 
+              title: "Mise en place d'un système d'intégration continue",
+              content: "- utilisation de Gitlab CI, la couche d'intégration continue de Gitlab\n" +
+              "- mise en place de scripts de déploiement, de tests unitaires et d'intégration dans des conteneurs Docker",
+              icon: "fa-industry"
+            },
+            { 
+              title: "Participation à la relation client",
+              content: "- participation aux rendez-vous clients\n" +
+              "- suivi de demandes en lien avec le support client",
+              icon: "fa-handshake"
+            }
+          ],
+          imgsrc: "cnfilms_short.png"
+        },
+        {
           title: "Lead technique & ingénieur développement FullStack",
           place: "SKINsoft (Besançon, France)",
           dates: "04/2017 à 07/2018",

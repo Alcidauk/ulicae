@@ -25,10 +25,10 @@
             <v-card class="ma-2">
               <v-card-title class="pa-3 primary card-title">
                   <v-layout row align-center>
-                    <v-flex xs2>
+                    <v-flex xs1>
                       <v-icon large color="secondary accent-1">{{item.icon}}</v-icon>
                     </v-flex>
-                    <v-flex xs10 class="secondary--text text--lighten-1">{{item.title}}</v-flex>
+                    <v-flex xs11 class="secondary--text text--lighten-1">{{item.title}}</v-flex>
                   </v-layout>
               </v-card-title>
               <v-card-text class="primary lighten-3" v-html="compiledMarkdown(item.content)"/>

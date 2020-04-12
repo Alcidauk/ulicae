@@ -1,6 +1,5 @@
 <template>
-<v-layout wrap fill-height>
-  <v-img :src="require(`@/assets/home.jpg`)">
+  <v-layout wrap fill-height child-flex secondary lighten-1>
     <v-card class="ma-5">
        <v-flex align-center justify-center layout>
        <v-card-title><h1>Notes</h1></v-card-title>

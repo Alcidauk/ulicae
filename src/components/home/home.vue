@@ -1,14 +1,12 @@
-<template>
-<v-layout wrap fill-height>
-  <v-img :src="require(`@/assets/home.jpg`)">
+  <template>
+  <v-layout wrap fill-height child-flex secondary lighten-1>
     <v-card class="ma-5">
-       <v-flex align-center justify-center layout>
-       <v-card-title><h1>Bienvenue</h1></v-card-title>
-       </v-flex>
+        <v-flex align-center justify-center layout>
+        <v-card-title><h1>Bienvenue</h1></v-card-title>
+        </v-flex>
 
       <v-layout row class="pa-5">
-
-        <v-flex xs4>
+          <v-flex xs4>
           <v-flex justify-center layout>
             <v-btn :to="{path:'/cv'}" fab large color="primary lighten-1">
               <v-icon contain large color="secondary">mdi-notebook</v-icon>
@@ -44,23 +42,22 @@
       </v-layout>
       
     </v-card>
-  </v-img>
-</v-layout>
-</template>
+  </v-layout>
+  </template>
 
-<script>
-export default {
-  name: 'Home',
-  props: {
-    msg: String
-  },
-  data () {
-    return { 
+  <script>
+  export default {
+    name: 'Home',
+    props: {
+      msg: String
+    },
+    data () {
+      return { 
+      }
     }
   }
-}
-</script>
+  </script>
 
-<style scoped>
-</style>
+  <style scoped>
+  </style>
 

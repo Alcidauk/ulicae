@@ -5,12 +5,13 @@ import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
 
 Vue.use(Vuetify, {
-  iconfont: 'mdi',
+  iconfont: 'fa',
   theme: {
-    primary: colors.teal.darken3,
-    secondary: '#C19A6B',
-    accent: colors.teal.accent4,
-    error: colors.red.accent2
+    primary: colors.blueGrey.darken3,
+    secondary: colors.brown.lighten3,
+    accent: colors.blueGrey.darken4,
+    error: colors.red.darken4,
+    background: colors.brown.lighten3,
   }
 })
 

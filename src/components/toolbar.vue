@@ -5,10 +5,10 @@
       <v-toolbar-title class="subtitle-font primary--text text--lighten-4 text-lg-right">Pierre Rognon</v-toolbar-title>
     </div>
       <v-toolbar-items justify-space-around>
-        <v-btn :to="{path:'/home'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">mdi-home-outline</v-icon>Accueil</v-btn>
-        <v-btn :to="{path:'/cv'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">mdi-notebook</v-icon>CV</v-btn>
-        <v-btn :to="{path:'/notes'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">mdi-note-text</v-icon>Notes</v-btn>
-        <v-btn :to="{path:'/portfolio'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">mdi-folder-image</v-icon>Albums</v-btn>
+        <v-btn :to="{path:'/home'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-home</v-icon>Accueil</v-btn>
+        <v-btn :to="{path:'/cv'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-address-card</v-icon>CV</v-btn>
+        <v-btn :to="{path:'/notes'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-clipboard</v-icon>Notes</v-btn>
+        <v-btn :to="{path:'/portfolio'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-images</v-icon>Albums</v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer>
     </v-toolbar>

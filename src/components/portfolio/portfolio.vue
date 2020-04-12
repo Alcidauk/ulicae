@@ -1,5 +1,5 @@
 <template>
-<v-container fluid>
+<v-container fluid fill-height child-flex secondary lighten-1>
   <v-card class="ma-5">
     <v-container grid-list-md>
       <v-layout row wrap>

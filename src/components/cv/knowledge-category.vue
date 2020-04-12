@@ -227,8 +227,6 @@ export default {
 
 <style scoped>
 .card-title {
-  background-color: #4DB6AC;
-  color: #B2FF59;
   font-weight: bold;
 }
 .knowledge-avatar {

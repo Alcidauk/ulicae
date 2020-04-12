@@ -22,8 +22,8 @@
       <v-container grid-list-md>
         <v-layout align-space-around justify-space-around fill-height row wrap>
           <v-flex v-for="(item, index) in subDiploma" :key=index xs6>
-            <v-card class="ma-2" color="primary lighten-4">
-              <v-card-title class="pa-3 card-title">
+            <v-card class="ma-2">
+              <v-card-title class="pa-3 primary card-title">
                   <v-layout row align-center>
                     <v-flex xs2>
                       <v-icon large color="secondary accent-1">{{item.icon}}</v-icon>
@@ -31,7 +31,7 @@
                     <v-flex xs10 class="secondary--text text--lighten-1">{{item.title}}</v-flex>
                   </v-layout>
               </v-card-title>
-              <v-card-text v-html="compiledMarkdown(item.content)"/>
+              <v-card-text class="primary lighten-3" v-html="compiledMarkdown(item.content)"/>
             </v-card> 
           </v-flex>   
         </v-layout>

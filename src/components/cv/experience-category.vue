@@ -39,27 +39,27 @@ export default {
               title: "Développement au sein de la suite logicielle de SKINsoft",
               content: "- développement Backend sur la plate-forme SKINsoft, surcouche à la GED (Gestion Électronique de Documents) Nuxeo, en Java EE\n" +
               "- développement Frontend sur la plate-forme SKPlayer, utilisant le framework Javascript ExtJS",
-              icon: "mdi-flask"
+              icon: "fa-flask"
             },
             { 
               title: "Développement au sein de la nouvelle architecture logicielle de SKINsoft",
               content: "- développement Backend sur la nouvelle architecture logicielle (Spring/Java EE, MongoDB, API REST)\n" +
               "- développement Frontend sur la nouvelle architecture logicielle (Vue.js)",
-              icon: "mdi-flask"
+              icon: "fa-flask"
             },
             { 
               title: "Suivi de la qualité des développements de l'ensemble de l'équipe technique",
               content: "- mise en place de revues de code\n" +
               "- participation à l'élaboration des Sprints\n" +
               "- supervision de la réalisation des tests unitaires et d'intégration",
-              icon: "mdi-chart-areaspline"
+              icon: "fa-chart-line"
             },
             { 
               title: "Participation à la relation client",
               content: "- participation à plusieurs auditions lors d'appels d'offres\n" +
               "- intervention chez plusieurs clients dans le cadre de support technique\n" +
               "- collaboration avec les interlocuteurs techniques de clients de le cadre du suivi de projets",
-              icon: "mdi-account-multiple"
+              icon: "fa-handshake"
             }
           ],
           imgsrc: "skin.jpg"
@@ -74,27 +74,27 @@ export default {
               title: "Développement au sein de la suite logicielle de SKINsoft",
               content: "- développement Backend sur la plate-forme SKINsoft, surcouche à la GED (Gestion Électronique de Documents) Nuxeo, en Java EE\n" +
               "- développement Frontend sur la plate-forme SKPlayer, utilisant le framework Javascript ExtJS",
-              icon: "mdi-flask"
+              icon: "fa-flask"
             },
             { 
               title: "Développement et maintenance de l'application mobile de récolement d'œuvres SKINreporter",
               content: "- refonte du code, maintenance et réalisation d'évolutions de l'application native Android\n" +
               "- réalisation d'évolutions sur l'API Rest de la suite SKINsoft\n" +
               "- suivi et finalisation de la relation avec le prestataire en charge du développement de l'application native Android",
-              icon: "mdi-cellphone-android"
+              icon: "fa-mobile-alt"
             },
             { 
               title: "Participation à la relation client",
               content: "- déplacements chez plusieurs clients lors d'ateliers de compréhension technique des besoins\n" +
               "- gestion de maintenance et de mises à jour chez plusieurs clients auto-hébergés",
-              icon: "mdi-account-multiple"
+              icon: "fa-handshake"
             },
             { 
               title: "Participation à la conception d'une nouvelle architecture logicielle",
               content: "- réflexion autour de l'évolution de l'architecture existante\n" +
               "- réalisation d'une étude et de preuves de concept autour de l'architecture logicielle\n" +
               "- participation à la définition de la nouvelle architecture (from scratch)",
-              icon: "mdi-wall"
+              icon: "fa-industry"
             }
           ],
             imgsrc: "skin.jpg"
@@ -110,14 +110,14 @@ export default {
               content: "- recherche d'une solution technique et réalisation de preuves de concept pour le développement d'une API REST en Java\n" +
               "- développement d'un tiers se connectant à la plate-forme SKINsoft pour mettre à disposition des données au sein d'une API REST\n" +
               "- réalisation d'une documentation technique autour de l'utilisation de l'API REST et maintenance de celle-ci",
-              icon: "mdi-flask"
+              icon: "fa-flask"
             },
             { 
               title: "Gestion de la relation avec le prestataire en charge du développement mobile",
               content: "- mise en place d'une collaboration afin de développer une API REST conforme aux besoins de l'application mobile\n" +
               "- suivi de l'avancement des développements du prestataire, organisation de réunions techniques\n" +
               "- tests fonctionnels de l'application native Android",
-              icon: "mdi-account-multiple-check"
+              icon: "fa-handshake"
             }
           ],
             imgsrc: "skin.jpg"
@@ -132,7 +132,7 @@ export default {
               title: "Développement d’un module Backend en Java",
               content: "- développement des couches modèle et présentation d'un nouveau module fonctionnel\n" +
               "- participation au développement de la couche vue à l'aide du Framework VAADIN",
-              icon: "mdi-flask"
+              icon: "fa-flask"
             }
           ],
             imgsrc: "kimoce.jpg"
@@ -148,14 +148,14 @@ export default {
               content: "- formation à la technologie VAADIN, Framework Java EE\n" +
               "- formation aux technologies utilisées chez Kimoce (Java EE, RMI)\n" +
               "- participation à la mise en place de l'environnement de développement nécessaire à ce nouveau projet",
-              icon: "mdi-wallet-travel"
+              icon: "fa-industry"
             },
             { 
               title: "Conception et développement des premiers modules fonctionnels de l'application",
               content: "- participation à la conception des différentes couches de l'application\n" +
               "- participation aux choix techniques inhérents au démarrage d'un projet: base de données, modèle de données, technologies Java EE\n" +
               "- réalisations de premiers modules sous forme de preuves de concept afin de valider les choix techniques effectués",
-              icon: "mdi-flask"
+              icon: "fa-flask"
             }
           ],
             imgsrc: "kimoce.jpg"
@@ -171,14 +171,14 @@ export default {
               content: "- recherches autour du système d'informations existant: Sybase\n" +
               "- étude de différents choix techniques possibles\n" +
               "- choix et mise en place d'une preuve de concept autour d'une application PhP",
-              icon: "mdi-wall"
+              icon: "fa-industry"
             },
             { 
               title: "Développement de l'applicatif PhP de suivi de production",
               content: "- développement d'une couche de connexion au système d'information\n" +
               "- développement d'un générateur de requêtes permettant de créer des rapports d'informations sur les informations voulues\n" +
               "- développement d'une vue en HTML et Javascript permettant d'afficher les rapports dans l'atelier de production",
-              icon: "mdi-flask"
+              icon: "fa-flask"
             }
           ],
             imgsrc: "sideo.jpg"

@@ -13,8 +13,8 @@
 
     <v-layout>
       <v-card v-if=currentKnowledge class="ma-2" color="primary lighten-4" width="100%">
-        <v-card-title class="pa-2 card-title">
-          <v-avatar size=64 color="primary accent-1" class="elevation-5 mt-1 ml-1 mb-1 mr-3 knowledge-avatar">
+        <v-card-title class="pa-2 primary card-title">
+          <v-avatar size=64 color="primary darken-2" class="elevation-5 mt-1 ml-1 mb-1 mr-3 knowledge-avatar">
             <v-img v-if="currentKnowledge.imgsrc" contain :src="require(`@/assets/${currentKnowledge.imgsrc}`)"/>
             <v-icon large v-if="currentKnowledge.icon" color="secondary lighten-1">{{currentKnowledge.icon}}</v-icon>
           </v-avatar>

@@ -13,7 +13,7 @@
       app>
 
       <v-btn icon align-center left @click.stop="miniVariant = !miniVariant">
-        <v-icon large color="secondary" v-html="miniVariant ? 'mdi-menu-right' : 'mdi-menu-left'"/>
+        <v-icon large color="secondary" v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'"/>
       </v-btn>
       <v-list>
         <v-list-tile
@@ -35,7 +35,7 @@
           target="#"
           key="cv">
           <v-list-tile-action>
-            <v-icon class="secondary--text">mdi-file-pdf-box</v-icon>
+            <v-icon class="secondary--text">fa-file-pdf</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title class="secondary--text text--lighten-2">CV au format PDF</v-list-tile-title>
@@ -81,27 +81,27 @@ export default {
       fixed: false,
       items: [
       {
-        icon: 'mdi-briefcase-outline',
+        icon: 'fa-briefcase',
         title: 'Expériences',
         currentPage: 'experiences'
       },
         {
-        icon: 'mdi-school',
+        icon: 'fa-graduation-cap',
         title: 'Formation',
         currentPage: 'formation'
       },
       {
-        icon: 'mdi-chart-line-variant',
+        icon: 'fa-chart-line',
         title: 'Compétences',
         currentPage: 'knowledges'
       },
       {
-        icon: 'mdi-sticker-emoji',
+        icon: 'fa-hand-peace',
         title: 'Centres d\'intérêt',
         currentPage: 'hobbies'
       },
       {
-        icon: 'mdi-information-variant',
+        icon: 'fa-envelope',
         title: 'Contact',
         currentPage: 'links'
       }]     

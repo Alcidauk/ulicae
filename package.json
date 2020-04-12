@@ -14,7 +14,6 @@
     "v-viewer": "^1.2.1",
     "vee-validate": "^2.1.0-beta.9",
     "vue": "^2.5.17",
-    "vue-material-design-icons": "^2.1.1",
     "vue-router": "^3.0.1",
     "vuetify": "^1.2.0"
   },

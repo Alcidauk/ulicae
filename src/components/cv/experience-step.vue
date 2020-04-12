@@ -1,5 +1,5 @@
 <template>
-    <v-expansion-panel-content expand-icon="mdi-arrow-down-bold-circle-outline">
+    <v-expansion-panel-content expand-icon="fa-chevron-circle-down">
       <div slot="header">
         <v-container grid-list-xl>
           <v-layout>

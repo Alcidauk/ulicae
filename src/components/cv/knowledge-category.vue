@@ -174,7 +174,7 @@ export default {
           "+ Habilité à spécifier et à découper une demande fonctionnelle en tâches techniques logiques;\n" +
           "+ Aisance dans la remontée d'alertes lors d'imprévus sur des développements.",
           imgsrc: null,
-          icon: "mdi-thought-bubble"
+          icon: "fa-chart-pie"
         },
         {
           title: "Méthode de travail",
@@ -183,7 +183,7 @@ export default {
           "+ Habitude du bon suivi des développements;\n" +
           "+ Compétences dans l'intégration continue et le déploiement de livrables.",
           imgsrc: null,
-          icon: "mdi-code-not-equal-variant"
+          icon: "fa-ruler"
         },
         {
           title: "Travail en équipe",
@@ -192,7 +192,7 @@ export default {
           "+ Pratique régulière du binômage sur un poste de travail;\n" +
           "+ Habitude à mener un projet fonctionnel à plusieurs.",
           imgsrc: null,
-          icon: "mdi-account-group"
+          icon: "fa-users"
         },
         {
           title: "Formation d'autres développeurs",
@@ -201,7 +201,7 @@ export default {
           "+ Suivi de la qualité du code d'une équipe de développeurs;\n" +
           "+ Force de proposition sur l'amélioration des processus de développement.",
           imgsrc: null,
-          icon: "mdi-school"
+          icon: "fa-chalkboard-teacher"
         },
         {
           title: "Intervention auprès de clients",
@@ -209,7 +209,7 @@ export default {
           "+ Habitude de dialogue technique avec des interlocuteurs techniciens;\n" +
           "+ Capacité à vulgariser le fonctionnement technique d'applicatifs.",
           imgsrc: null,
-          icon: "mdi-account-multiple-check"
+          icon: "fa-comments"
         },
         {
           title: "Rédaction",
@@ -217,7 +217,7 @@ export default {
           "+ Capacité à rédiger clairement des documents techniques;\n" +
           "+ À l'aise dans la correspondance écrite avec un client.",
           imgsrc: null,
-          icon: "mdi-pencil"
+          icon: "fa-quote-left"
         }
       ]
     }

@@ -2,7 +2,7 @@
   <v-container>
 
     <v-btn v-if="!$vuetify.breakpoint.lgAndUp" color="primary lighten-1" fab left @click.stop="permanent = !permanent">
-      <v-icon color="secondary" v-html="permanent ? 'mdi-backburger' : 'mdi-menu'"/>
+      <v-icon color="secondary" v-html="permanent ? 'fa-angle-left' : 'fa-angle-right'"/>
     </v-btn>
     <v-navigation-drawer
       class="primary lighten-1"

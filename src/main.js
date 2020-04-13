@@ -8,6 +8,7 @@ import Cv from './components/cv/cv'
 import Home from './components/home/home'
 import Note from './components/note/note'
 import Cinelog from './components/cinelog/cinelog'
+import CinelogPart from './components/cinelog/cinelog-part'
 import Portfolio from './components/portfolio/portfolio'
 import PortfolioCaroussel from './components/portfolio/portfolio-caroussel'
 
@@ -37,7 +38,12 @@ const routes = [
       { path: ':name', component: PortfolioCaroussel }
     ]
   },
-  { path: '/cinelog', component: Cinelog },
+  { path: '/cinelog', 
+    component: Cinelog,
+    children: [
+      { path: ':part', component: CinelogPart },
+    ] 
+  },
 ]
 
 const router = new VueRouter({routes, mode: 'history'})

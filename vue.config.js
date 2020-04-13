@@ -11,7 +11,9 @@ module.exports = {
           {
             loader: "markdown-loader",
             options: {
-              pedantic: true,
+              pedantic: false,
+              gfm: true,
+              breaks: true,
               renderer
             }
           }

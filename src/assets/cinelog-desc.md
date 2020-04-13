@@ -1,0 +1,1 @@
+**CineLog** est une application android sous licence GPL v3.

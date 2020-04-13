@@ -7,6 +7,7 @@ import VueRouter from 'vue-router'
 import Cv from './components/cv/cv'
 import Home from './components/home/home'
 import Note from './components/note/note'
+import Cinelog from './components/cinelog/cinelog'
 import Portfolio from './components/portfolio/portfolio'
 import PortfolioCaroussel from './components/portfolio/portfolio-caroussel'
 
@@ -35,7 +36,8 @@ const routes = [
     children: [
       { path: ':name', component: PortfolioCaroussel }
     ]
-  }
+  },
+  { path: '/cinelog', component: Cinelog },
 ]
 
 const router = new VueRouter({routes, mode: 'history'})

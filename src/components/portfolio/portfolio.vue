@@ -9,10 +9,10 @@
 
           <v-container grid-list-md>
               <v-layout justify-center row wrap class="mb-2">
-              <router-link :to="'/portfolio/' + item.code" v-for="(item,i) in portfolios" :key=i>
+              <router-link to="/portfolio/besancon">
                   <v-avatar contain size=64>
                       <v-img
-                        :src="require(`@/assets/portfolio/${item.code}/1.jpg`)"
+                        :src="require(`@/assets/portfolio/besancon/1.jpg`)"
                         aspect-ratio="1">
                         <v-layout
                           slot="placeholder"
@@ -24,7 +24,6 @@
                         </v-layout>
                       </v-img>
                   </v-avatar>
-                  <v-layout justify-center>{{item.name}}</v-layout>
                 </router-link>
 
               </v-layout>
@@ -42,21 +41,6 @@ import axios from 'axios'
 
 export default {
   name: 'Portfolio',
-  created () {
-    axios
-      .get(process.env.VUE_APP_API_URL + `/portfolios`)
-      .then(response => {
-        this.portfolios = response.data
-      })
-      .catch(e => {
-        this.errors.push(e)
-      })
-  },
-  data () {
-    return { 
-      portfolios: []
-    }
-  }
 }
 </script>
 

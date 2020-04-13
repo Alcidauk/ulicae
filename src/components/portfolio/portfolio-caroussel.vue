@@ -13,9 +13,9 @@
                 width=128
                 height=128
                 class="ma-2 portfolio-avatar"
-                v-for="(item,i) in images"
-                :key="i" 
-                :src="require(`@/assets/portfolio/${code}/${item}_light.jpg`)"/>
+                v-for="(item) in numbers"
+                :key="item" 
+                :src="require(`@/assets/portfolio/besancon/${item}_light.jpg`)"/>
           </viewer>
         
         </v-layout>
@@ -30,20 +30,9 @@ import axios from 'axios'
 
 export default {
   name: 'PortfolioCaroussel',
-  created () {
-    axios
-      .get(process.env.VUE_APP_API_URL + `/portfolios/` + this.$route.params.name)
-      .then(response => {
-        this.name = response.data.name
-        this.code = response.data.code
-        this.images = response.data.images
-      })
-      .catch(e => {
-        this.errors.push(e)
-      })
-  },
   data () {
     return { 
+      numbers: [ 1, 2, 3, 4, 5, 6 ],
       name: null,
       code: null,
       selected: null,

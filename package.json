@@ -10,7 +10,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.8.7",
     "axios": "^0.18.1",
-    "marked": "^0.5.2",
+    "marked": "^0.8.2",
     "v-viewer": "^1.5.1",
     "vee-validate": "^2.2.15",
     "vue": "^2.6.11",

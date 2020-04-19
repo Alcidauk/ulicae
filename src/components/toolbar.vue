@@ -9,7 +9,7 @@
         <v-btn :to="{path:'/cv'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-address-card</v-icon>CV</v-btn>
         <v-btn :to="{path:'/notes'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-clipboard</v-icon>Notes</v-btn>
         <v-btn :to="{path:'/portfolio'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-images</v-icon>Albums</v-btn>
-        <v-btn :to="{path:'/cinelog'}" depressed color="#971696" class="secondary--text">           
+        <v-btn :to="{path:'/cinelog/home'}" depressed color="#320b86" class="secondary--text">           
           <v-img height="30" width="30" class="mr-3" :src="require(`@/assets/cinelog.png`)"/>
           CineLog
         </v-btn>

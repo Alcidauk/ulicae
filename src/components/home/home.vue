@@ -65,19 +65,19 @@
           noter les films et séries que vous regardez.
         </div>
 
-        <div class="link-buttons mt-1" align="center" justify="center">
-          <a href="/cinelog/home">
+        <div class="d-flex flex-column link-buttons mt-1 align-center">
+          <v-btn depressed fab :to="{ path: '/cinelog/home' }">
             <v-img
               width="128"
               height="128"
               :src="require(`@/assets/cinelog_big.png`)"
             />
-            <span
+          </v-btn>
+                      <span
               class="label-text cinelog_secondary--text text--lighten-3 text-h6"
             >
               CineLog
             </span>
-          </a>
         </div>
       </v-container>
     </v-row>

@@ -1,5 +1,5 @@
 <template>
-  <v-layout fill-height secondary lighten-1>
+  <v-layout fill-height background lighten-1>
     <v-btn
       color="#320b86"
       v-if="!$vuetify.breakpoint.lgAndUp"

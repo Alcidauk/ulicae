@@ -28,7 +28,7 @@
             <v-icon color="secondary" v-html="item.icon"/>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title class="secondary--text text--lighten-2" v-text="item.title"/>
+            <v-list-item-title class="secondary--text text--lighten-1" v-text="item.title"/>
           </v-list-item-content>
         </v-list-item>
 
@@ -41,7 +41,7 @@
             <v-icon class="secondary--text">fa-file-pdf</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title class="secondary--text text--lighten-2">CV au format PDF</v-list-item-title>
+            <v-list-item-title class="secondary--text text--lighten-1">CV au format PDF</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

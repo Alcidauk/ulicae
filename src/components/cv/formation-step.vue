@@ -1,8 +1,8 @@
 <template>
   <v-card class="pa-2 ma-2">
     <v-container grid-list-xl>
-      <v-layout>
-        <v-avatar size="96" class="elevation-10">
+      <v-layout class="align-center">
+        <v-avatar size="96" class="avatar-border">
               <v-img contain :src="require(`@/assets/${imgsrc}`)" alt="title"/>
         </v-avatar>
         <v-flex>
@@ -35,6 +35,10 @@ export default {
 </script>
 
 <style scoped>
+.avatar-border {
+  border: 2px solid #edb976;
+}
+
 .knowledge-image {
   overflow: hidden;
 }

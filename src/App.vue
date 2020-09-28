@@ -13,9 +13,7 @@
 
     <v-navigation-drawer v-model="navigate" absolute temporary color="primary">
       <v-list nav dense>
-        <v-list-item-group
-          v-model="group"
-          active-class="primary accent-4">
+        <v-list-item-group active-class="primary accent-4">
 
           <v-list-item :to="{ path: '/home' }">
             <v-list-item-icon>

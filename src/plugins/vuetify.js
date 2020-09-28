@@ -11,6 +11,9 @@ Vue.use(Vuetify, {
     accent: colors.blueGrey.darken4,
     error: colors.red.darken4,
     background: colors.grey.lighten3,
+    cinelog_primary: "#320b86",
+    cinelog_secondary: "#790e8b",
+    white: "#fff"
   }
 })
 

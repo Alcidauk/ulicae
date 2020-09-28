@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Toolbar/>
+    <Toolbar v-if="$router.currentRoute.path !== '/' && $router.currentRoute.path !== '/home'"/>
     <v-content>
       <router-view></router-view>
     </v-content>

@@ -27,7 +27,7 @@
           <v-list-item-action>
             <v-icon color="secondary">{{ item.icon }}</v-icon>
           </v-list-item-action>
-          <v-list-item-content>
+          <v-list-item-content align="end">
             <v-list-item-title class="secondary--text text--lighten-1 text-subtitle-2" v-text="item.title"/>
           </v-list-item-content>
         </v-list-item>
@@ -40,7 +40,7 @@
           <v-list-item-action>
             <v-icon class="secondary--text">fa-file-pdf</v-icon>
           </v-list-item-action>
-          <v-list-item-content>
+          <v-list-item-content align="end">
             <v-list-item-title class="secondary--text text--lighten-1 text-subtitle-2">CV au format PDF</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
@@ -89,7 +89,7 @@ export default {
         currentPage: 'experiences'
       },
         {
-        icon: 'fa-institution',
+        icon: 'fa-chalkboard-teacher',
         title: 'Formation',
         currentPage: 'formation'
       },

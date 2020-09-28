@@ -28,7 +28,7 @@
             <v-list-item-action>
               <v-icon color="secondary">{{ item.icon }}</v-icon>
             </v-list-item-action>
-            <v-list-item-content>
+            <v-list-item-content align="end">
               <v-list-item-title class="secondary--text text--lighten-2 text-subtitle-2">
                 {{ item.title }}
               </v-list-item-title>

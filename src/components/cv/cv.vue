@@ -48,7 +48,7 @@
     <ExperienceCategory currentPage="experiences" :selectedPage="selectedPage"/>
     <KnowledgeCategory currentPage="knowledges" :selectedPage="selectedPage"/>
     <HobbyCategory currentPage="hobbies" :selectedPage="selectedPage"/>
-    <LinkCategory currentPage="links" :selectedPage="selectedPage"/>
+    <!-- <LinkCategory currentPage="links" :selectedPage="selectedPage"/> -->
 
   </v-container>
 </template>
@@ -100,11 +100,12 @@ export default {
         title: 'Centres d\'intérêt',
         currentPage: 'hobbies'
       },
-      {
-        icon: 'fa-envelope',
-        title: 'Contact',
-        currentPage: 'links'
-      }]     
+      // {
+      //   icon: 'fa-envelope',
+      //   title: 'Contact',
+      //   currentPage: 'links'
+      // }
+      ]     
     }
   }
 }

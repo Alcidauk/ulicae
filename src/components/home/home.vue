@@ -18,7 +18,7 @@
           align="center"
           justify="center"
         >
-          Bienvenue sur mon site. Développeur depuis quelques années, vous
+          Bienvenue sur mon site. Développeur depuis plusieurs années, vous
           pourrez trouver quelques ressources personnelles et professionnelles.
         </div>
 

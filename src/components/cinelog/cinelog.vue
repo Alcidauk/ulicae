@@ -26,23 +26,23 @@
         </v-list-item>
         <v-list-item value="true" v-for="(item, i) in items" :key="i" :to="item.link">
             <v-list-item-action>
-              <v-icon color="secondary" v-html="item.icon" />
+              <v-icon color="secondary">{{ item.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
-              <v-list-item-title class="secondary--text text--lighten-2">
-                <h3 class="secondary--text" v-text="item.title" />
+              <v-list-item-title class="secondary--text text--lighten-2 text-subtitle-2">
+                {{ item.title }}
               </v-list-item-title>
             </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
-    <v-container>
-      <v-layout grid-list-md row wrap>
-        <v-layout row xs6 class="pr-2 align-end">
+    <v-container fluid>
+      <div class="d-flex ml-3">
+        <v-row xs6 class="align-end">
           <h1 class="mb-5">CineLog</h1>
-        </v-layout>
-        <v-layout column xs6 class="align-end">
+        </v-row>
+        <v-column xs6 class="align-end">
           <a href="https://f-droid.org/packages/com.ulicae.cinelog/" target="blank">
             <img
               src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
@@ -50,8 +50,8 @@
               height="60"
             />
           </a>
-        </v-layout>
-      </v-layout>
+        </v-column>
+      </div>
 
       <v-card class="pa-5">
         <router-view xs12></router-view>

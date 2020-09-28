@@ -12,10 +12,13 @@
       fixed
       app>
 
-      <v-btn icon align-center left @click.stop="miniVariant = !miniVariant">
-        <v-icon large color="secondary" v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'"/>
-      </v-btn>
       <v-list>
+        <v-list-item class="mb-4">
+          <v-list-item-action @click.stop="miniVariant = !miniVariant">
+            <v-icon color="secondary" large v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'" />
+          </v-list-item-action>
+        </v-list-item>
+
         <v-list-item
           value="true"
           v-for="(item, i) in items"

@@ -1,15 +1,10 @@
 <template>
   <v-app>
-    <Toolbar
-      v-if="
-        $router.currentRoute.path !== '/' &&
-        $router.currentRoute.path !== '/home'
-      "
-      v-on:toggle-navigate="updateNavigate()"
-    />
-    <v-content>
+    <Toolbar v-if="$router.currentRoute.path !== '/' && $router.currentRoute.path !== '/home'"
+      v-on:toggle-navigate="updateNavigate()"/>
+    <v-main>
       <router-view></router-view>
-    </v-content>
+    </v-main>
 
     <v-navigation-drawer v-model="navigate" absolute temporary color="primary">
       <v-list nav dense>
@@ -112,4 +107,6 @@ export default {
 .cinelog-item {
   background-color: #320b86;
 }
+
+html { overflow-y: auto }
 </style>

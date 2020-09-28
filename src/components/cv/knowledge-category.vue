@@ -14,7 +14,6 @@
 
 <script>
 import KnowledgePart from './knowledge-part'
-import marked from 'marked'
 
 export default {
   name: 'KnowledgeCategory',
@@ -31,19 +30,12 @@ export default {
       techKnowledges: [
         {
           title: "Linux",
-          content: "Très bonne aisance avec les environnements Linux.\n" +
+          content: "Grande aisance avec les environnements Linux.\n" +
           "+ Utilisation d'une distribution Debian de manière personnelle;\n" +
           "+ Travail avec des distributions dérivées d'Ubuntu dans le cadre professionnel;\n" +
           "+ Connaissance des distributions RedHat et dérivées (CentOs, Fedora);\n" +
           "+ Rudiments dans l'utilisation d'une distribution ArchLinux.",
           imgsrc: "linux.png"
-        },
-        {
-          title: "LaTeX",
-          content: "Bonnes connaissances usuelles de ce langage.\n" +
-           "+ Rédaction de rapports (stage, cahier de spécifications);\n" +
-           "+ Utilisation de la classe permettant de générer des diaporamas: Beamer.",
-          imgsrc: "latex.png"
         },
         {
           title: "Java",
@@ -72,13 +64,6 @@ export default {
           imgsrc: "spring.png"
         },
         {
-          title: "Mongo DB",
-          content: "Connaîssances globales sur ce Système de Gestion de Base de Données.\n" +
-          "+ Utilisation de Morphia, librairie Java pour Mongo;\n" +
-          "+ Connaissances dans l'utilisation de la ligne de commandes de Mongo.",
-          imgsrc: "mongo.png"
-        },
-        {
           title: "Nuxeo",
           content: "Très bonne connaissance de cette Gestion Électronique de Documents.\n" +
           "+ Maîtrise de la notion de stockage sous forme de documents (types, schémas, description de schémas en XSD);\n" +
@@ -87,11 +72,63 @@ export default {
           imgsrc: "nuxeo.png"
         },
         {
-          title: "Vaadin",
-          content: "Bonne maîtrise du développement d'une application autour de ce Framework.\n" +
-          "+ Connaissances autour du système de widgets proposés par Vaadin;\n" +
-          "+ Utilisation du pattern recommandé par ce framework: MVVP (Modèle-Vue Vue-Présentation).",
-          imgsrc: "vaadin.png"
+          title: "Python",
+          content: "Bonnes connaissances sur Python 2 et 3 en environnement professionnel.\n" +
+          "+ Développement d'un serveur backend WSGi;\n" +
+          "+ Utilisation de diverses librairies (Redis, Pytest, Waitress, Guinicorn, etc.).",
+          imgsrc: "python.png"
+        },
+        {
+          title: "Python Pyramid",
+          content: "Utilisation confirmée de ce framework Web.\n" +
+          "+ Utilisation sous forme d'un serveur Web de templates;\n" +
+          "+ Utilisation comme serveur d'une API REST dialoguant avec un frontend Javascript.",
+          imgsrc: "pyramid.png"
+        },
+        {
+          title: "Javascript / Typescript",
+          content: "Bonne maîtrise du langage à travers l'utlisation de framework tels qu'Angular 2+ et Vue.js.\n" +
+          "+ Développement quotidien dans ce langage;\n" +
+          "+ Connaissance des différentes versions de JS (ES2016);" +
+          "+ Utilisation de typescript et de ses notions objet (typages, interfaces, classe abstraite, etc.).",
+          imgsrc: "javascript.png"
+        },
+        {
+          title: "Angular 2",
+          content: "Utilisation avancée du framework dans un environnement de production.\n" +
+          "+ Développement \"from scratch\" de l'application métier principale d'un éditeur logiciel;\n" +
+          "+ Utilisation du toolkit Nebular, de ses modules d'authentification et de ses composants graphiques;\n" +
+          "+ Maîtrise des notions avancées de routage, de modules, de test unitaire et d'intégration (avec Jasmine et Karma).",
+          imgsrc: "angular.jpeg"
+        },
+        {
+          title: "Vue.js",
+          content: "Connaissances des fondements de ce framework.\n" +
+          "+ Développements ponctuels de composants UI;\n" +
+          "+ Connaissance et compréhension de la notion de modèle.",
+          imgsrc: "vue.png"
+        },
+        {
+          title: "ExtJS",
+          content: "Bonnes connaissances autour du framework.\n" +
+          "+ Utilisation quotidienne dans le cadre de développements sur une ancienne version (2.3);\n" +
+          "+ Bonne compréhension des composants principaux proposés par ExtJS;\n" +
+          "+ Aisance dans les notions propres à ExtJS (extension de composants, configuration, évènements).",
+          imgsrc: "extjs.png"
+        },
+        {
+          title: "PhP",
+          content: "Rudiments et développements partiels sur d'anciennes versions.\n" +
+          "+ Compréhension de la notion de langage script;\n" +
+          "+ Connaissances de base sur le framework Symfony et son ORM Doctrine.",
+          imgsrc: "php.png"
+        },
+        {
+          title: "Mongo DB",
+          content: "Connaîssances globales sur ce Système de Gestion de Base de Données.\n" +
+          "+ Utilisation de Morphia, librairie Java pour Mongo;\n" +
+          "+ Connaissances dans l'utilisation de la ligne de commandes de Mongo.",
+          imgsrc: "mongo.png"
         },
         {
           title: "Docker",
@@ -103,55 +140,19 @@ export default {
           imgsrc: "docker.png"
         },
         {
-          title: "Vue.js",
-          content: "Connaissances des fondements de ce framework.\n" +
-          "+ Développements ponctuels de composants UI;\n" +
-          "+ Connaissance et compréhension de la notion de modèle.",
-          imgsrc: "vue.png"
-        },
-        {
           title: "Shell / Bash",
-          content: "Très bonne aisance dans l'usage d'une ligne de commandes. Des bases dans le développement de script bash.\n" +
+          content: "Grande aisance dans l'usage d'une ligne de commandes. Des bases dans le développement de script bash.\n" +
           "+ Utilisation quotidienne du terminal dans le cadre de l'environnement de développement;\n" +
           "+ Rédaction de scripts shell utilitaires de manière occasionnelle.",
           imgsrc: "shell.png"
         },
         {
-          title: "ExtJS",
-          content: "Bonnes connaissances autour du framework.\n" +
-          "+ Utilisation quotidienne dans le cadre de développements sur une ancienne version (2.3);\n" +
-          "+ Bonne compréhension des composants principaux proposés par ExtJS;\n" +
-          "+ Aisance dans les notions propres à ExtJS (extension de composants, configuration, évènements).",
-          imgsrc: "extjs.png"
-        },
-        {
           title: "Android",
           content: "Aisance dans le développement natif sur cette plateforme.\n" +
-          "+ Reprise de plusieurs applicatifs Android;\n" +
+          "+ Développement de plusieurs applicatifs Android dans le cadre personnel et professionnel;\n" +
           "+ Socle de connaissances sur les notions d'une application Android (Activité, Cycle de vie);\n" +
           "+ Connaissances de base dans les composants graphiques disponibles.",
           imgsrc: "android.png"
-        },
-        {
-          title: "PhP",
-          content: "Rudiments et développements partiels sur d'anciennes versions.\n" +
-          "+ Compréhension de la notion de langage script;\n" +
-          "+ Connaissances de base sur le framework Symfony et son ORM Doctrine.",
-          imgsrc: "php.png"
-        },
-        {
-          title: "Javascript",
-          content: "Connaissances à travers l'utlisation de framework tels que Vue.js et ExtJS.\n" +
-          "+ Développement régulier dans ce langage;\n" +
-          "+ Rudiments sur les différentes versions de JS (ES2016).",
-          imgsrc: "javascript.png"
-        },
-        {
-          title: "Python",
-          content: "Rudiments et développements sur d'anciennes versions.\n" +
-          "+ Développement de quelques scripts;\n" +
-          "+ Développement d'une application avec interface graphique en GTK 2.",
-          imgsrc: "python.png"
         },
         {
           title: "Svn",
@@ -164,7 +165,14 @@ export default {
           "+ Utilisation des fonctionnalités de branche;\n" +
           "+ Aisance dans l'utilisation d'outils satellites à Git: Github, Gitlab.",
           imgsrc: "git.png"
-        }
+        },
+        {
+          title: "LaTeX",
+          content: "Bonnes connaissances usuelles de ce langage.\n" +
+           "+ Rédaction de rapports (stage, cahier de spécifications);\n" +
+           "+ Utilisation de la classe permettant de générer des diaporamas: Beamer.",
+          imgsrc: "latex.png"
+        },
       ],
       proKnowledges: [
         {

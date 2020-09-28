@@ -20,10 +20,10 @@
       </div>
 
       <v-container grid-list-md>
-        <v-layout align-space-around justify-space-around fill-height row wrap>
+        <v-layout align-space-around justify-space-around row wrap>
           <v-flex v-for="(item, index) in subDiploma" :key=index xs6>
-            <v-card class="ma-2">
-              <v-card-title class="pa-3 primary card-title">
+            <v-card class="ma-2 primary lighten-3" height="100%">
+              <v-card-title class="pa-3 card-title">
                   <v-layout row align-center>
                     <v-flex xs1>
                       <v-icon large color="secondary accent-1">{{item.icon}}</v-icon>

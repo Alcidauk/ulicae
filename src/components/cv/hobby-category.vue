@@ -5,10 +5,10 @@
                 <h1 class="mb-2 page-title">Centres d'intérêts</h1>
                 <v-layout column>
                   <HobbyStep 
-                    title="Flag football" 
-                    description="pratique en compétition amateur lors de la saison 2017-2018"
-                    subDescription="Crédits photographies: Pixeyes / footballamericain.com" 
-                    imgsrc="flag.jpg"
+                    title="Supermarché coopératif" 
+                    description="implication dans les groupes d'approvisionnement aux 400 Coop (Paris 20ème)"
+                    subDescription="Crédits photographies: Arnaud CAILLOU / L’Oeil Témoin" 
+                    imgsrc="coop.jpg"
                     imgposition="left 0% top 10%"/>
                   <HobbyStep 
                     title="Café" 

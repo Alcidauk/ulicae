@@ -33,7 +33,7 @@ export default {
           title: "Ingénieur développement FullStack",
           place: "CN Films (Paris, France)",
           dates: "depuis 12/2018",
-          diploma: "Développement d'un ensemble de produits à destination des distributeurs et exploitants dans le domaine du cinéma",
+          diploma: "Développement sur une suite de produits à destination des distributeurs et exploitants dans le domaine du cinéma",
           subDiploma: [
             { 
               title: "Conception et développement d'une nouvelle version de Cinego Distri",

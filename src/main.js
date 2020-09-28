@@ -17,6 +17,7 @@ import fr from 'vee-validate/dist/locale/fr';
 
 import 'viewerjs/dist/viewer.css'
 import Viewer from 'v-viewer'
+import vuetify from './plugins/vuetify';
 
 Vue.use(Viewer)
 
@@ -49,6 +50,7 @@ const routes = [
 const router = new VueRouter({routes, mode: 'history'})
 
 new Vue({
+  vuetify,
   render: h => h(App),
   router
 }).$mount('#app')

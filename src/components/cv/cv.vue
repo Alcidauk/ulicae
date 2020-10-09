@@ -1,21 +1,23 @@
 <template>
   <v-container>
 
-    <v-btn v-if="!$vuetify.breakpoint.lgAndUp" color="primary lighten-1" fab left @click.stop="permanent = !permanent">
+    <v-btn color="primary lighten-1" fab left @click.prevent="toggle()">
       <v-icon color="secondary" v-html="permanent ? 'fa-angle-left' : 'fa-angle-right'"/>
     </v-btn>
+
     <v-navigation-drawer
       class="primary lighten-1"
-      :mini-variant="miniVariant"
-      :permanent="permanent"
-      clipped
+      v-model="permanent"
       fixed
-      app>
+      clipped
+      :app="$vuetify.breakpoint.smAndDown"
+      :absolute="$vuetify.breakpoint.mdAndUp"
+      :temporary="$vuetify.breakpoint.smAndDown && temporary">
 
       <v-list>
         <v-list-item class="mb-4">
-          <v-list-item-action @click.stop="miniVariant = !miniVariant">
-            <v-icon color="secondary" large v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'" />
+          <v-list-item-action @click.prevent="toggle()">
+            <v-icon color="secondary" large v-html="'fa-angle-left'" />
           </v-list-item-action>
         </v-list-item>
 
@@ -23,7 +25,8 @@
           value="true"
           v-for="(item, i) in items"
           :key="i"
-          @click.prevent="selectedPage = item.currentPage">
+          @click.prevent="selectedPage = item.currentPage"
+          @click.stop="toggle()">
           <v-list-item-action>
             <v-icon color="secondary">{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -47,11 +50,13 @@
       </v-list>
     </v-navigation-drawer>
 
+    <v-container fluid>
     <FormationCategory currentPage="formation" :selectedPage="selectedPage"/>
     <ExperienceCategory currentPage="experiences" :selectedPage="selectedPage"/>
     <KnowledgeCategory currentPage="knowledges" :selectedPage="selectedPage"/>
     <HobbyCategory currentPage="hobbies" :selectedPage="selectedPage"/>
     <!-- <LinkCategory currentPage="links" :selectedPage="selectedPage"/> -->
+    </v-container>
 
   </v-container>
 </template>
@@ -77,8 +82,8 @@ export default {
   },
   data () {
     return {
-      miniVariant: false,
       permanent: false,
+      temporary: false,
       selectedPage: 'experiences',
       drawer: null,
       fixed: false,
@@ -110,6 +115,14 @@ export default {
       // }
       ]     
     }
-  }
+  },
+    methods: {
+      toggle: function () {
+        if(this.$vuetify.breakpoint.smAndDown || this.temporary){
+          this.temporary = !this.temporary;
+        }
+        this.permanent = !this.permanent;
+      },
+  },
 }
 </script>

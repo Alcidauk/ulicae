@@ -4,17 +4,21 @@
       <v-container text-center>
         <div class="toolbar-title pb-3" align="center" justify="center">
           <div>
-            <span class="title-font secondary--text">Ulicae</span>
-            <span class="extension-font secondary--text">.com</span>
+            <span class="text-h3 text-md-h1 title-font secondary--text"
+              >Ulicae</span
+            >
+            <span class="text-h5 text-md-h3 extension-font secondary--text"
+              >.com</span
+            >
           </div>
           <span
-            class="subtitle-font primary--text text--lighten-4 text-lg-right"
+            class="text-h5 text-md-h3 subtitle-font primary--text text--lighten-4 text-lg-right"
           >
             Pierre Rognon
           </span>
         </div>
         <div
-          class="mt-1 mb-5 secondary--text text-h6"
+          class="mt-1 mb-5 secondary--text text-subtitle-1 text-md-h6"
           align="center"
           justify="center"
         >
@@ -23,30 +27,24 @@
         </div>
 
         <v-row>
-          <v-col class="link-buttons">
-            <v-btn :to="{ path: '/cv' }" fab color="secondary">
+          <v-col
+            class="link-buttons"
+            v-bind:class="{ 'small-link-buttons': $vuetify.breakpoint.smAndDown }"
+            v-for="n in 3"
+            :key="n"
+          >
+            <v-btn :to="{ path: tabs[n - 1].path }" fab color="secondary">
               <v-flex>
-                <v-icon x-large color="primary">fa-address-card</v-icon>
+                <v-icon 
+                  :x-large="$vuetify.breakpoint.lgAndUp" 
+                  :large="$vuetify.breakpoint.smAndUp" 
+                color="primary">
+                {{ tabs[n - 1].icon }}
+                </v-icon>
               </v-flex>
             </v-btn>
+            <v-flex class="mt-2 label-text secondary--text text-h6">{{ tabs[n - 1].name }}</v-flex>
           </v-col>
-          <v-col class="link-buttons">
-            <v-btn :to="{ path: '/notes' }" fab color="secondary">
-              <v-icon x-large color="primary">fa-clipboard</v-icon>
-            </v-btn>
-          </v-col>
-          <v-col class="link-buttons">
-            <v-btn :to="{ path: '/portfolio' }" fab color="secondary">
-              <v-icon x-large color="primary">fa-images</v-icon>
-            </v-btn>
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-flex xs4 class="label-text secondary--text text-h6">CV</v-flex>
-          <v-flex xs4 class="label-text secondary--text text-h6">Notes</v-flex>
-          <v-flex xs4 class="label-text secondary--text text-h6"
-            >Portfolio</v-flex
-          >
         </v-row>
       </v-container>
     </v-row>
@@ -55,30 +53,36 @@
       <v-container text-center>
         <div class="toolbar-title pb-3" align="center" justify="center">
           <div>
-            <span class="title-font cinelog_secondary--text text--lighten-3">
+            <span
+              class="text-h3 text-md-h1 title-font cinelog_secondary--text text--lighten-3"
+            >
               Cinelog
             </span>
           </div>
         </div>
-        <div class="mb-5 cinelog_secondary--text text--lighten-3 text-h6">
+        <div
+          class="mb-5 cinelog_secondary--text text--lighten-3 text-subtitle-1 text-md-h6"
+        >
           CineLog est une application mobile permettant de sauvegarder et de
           noter les films et séries que vous regardez.
         </div>
 
-        <div class="d-flex flex-column link-buttons mt-1 align-center">
-          <v-btn depressed fab :to="{ path: '/cinelog/home' }">
+
+        <v-row>
+          <v-col
+            class="link-buttons"
+            v-bind:class="{ 'small-link-buttons': $vuetify.breakpoint.smAndDown }"
+          >
+           <v-btn depressed fab :to="{ path: '/cinelog/home' }">
             <v-img
-              width="128"
-              height="128"
+              :width="$vuetify.breakpoint.smAndDown ? 78 : 128"
+              :height="$vuetify.breakpoint.smAndDown ? 78 : 128"
               :src="require(`@/assets/cinelog_big.png`)"
             />
-          </v-btn>
-                      <span
-              class="label-text cinelog_secondary--text text--lighten-3 text-h6"
-            >
-              CineLog
-            </span>
-        </div>
+           </v-btn>
+            <v-flex class="mt-2 label-text cinelog_secondary--text text--lighten-3 text-h6">CineLog</v-flex>
+          </v-col>
+        </v-row>
       </v-container>
     </v-row>
   </div>
@@ -91,7 +95,31 @@ export default {
     msg: String,
   },
   data() {
-    return {};
+    return {
+      tabs: [
+        {
+          path: "/cv",
+          icon: "fa-address-card",
+          name: "CV",
+        },
+        {
+          path: "/notes",
+          icon: "fa-clipboard",
+          name: "Notes",
+        },        
+        {
+          path: "/portfolio",
+          icon: "fa-images",
+          name: "Portfolio",
+        },
+      ],
+    };
+  },
+  computed: {
+    cols() {
+      const { lg, sm } = this.$vuetify.breakpoint;
+      return lg ? [3, 9] : sm ? [9, 3] : [6, 6];
+    },
   },
 };
 </script>
@@ -116,24 +144,26 @@ a {
 }
 
 .title-font {
-  font-family: "library";
-  font-size: 7rem;
+  font-family: "library" !important;
   font-weight: 600;
 }
 
 .extension-font {
-  font-family: "library";
-  font-size: 2rem;
+  font-family: "library" !important;
 }
 
 .subtitle-font {
-  font-family: "library";
-  font-size: 2.5rem;
+  font-family: "library" !important;
 }
 
 .link-buttons > .v-btn {
   height: 128px;
   width: 128px;
+}
+
+.small-link-buttons > .v-btn {
+  height: 78px;
+  width: 78px;
 }
 </style>
 

@@ -1,32 +1,35 @@
 <template>
   <v-container>
 
-    <v-btn color="primary lighten-1" fab left @click.prevent="toggle()">
-      <v-icon color="secondary" v-html="permanent ? 'fa-angle-left' : 'fa-angle-right'"/>
+    <v-btn
+      color="primary lighten-1"
+      v-if="!$vuetify.breakpoint.lgAndUp"
+      fab
+      left
+      @click.stop="permanent = !permanent">
+      <v-icon color="secondary" v-html="permanent ? 'fa-angle-left' : 'fa-angle-right'" />
     </v-btn>
 
     <v-navigation-drawer
       class="primary lighten-1"
-      v-model="permanent"
-      fixed
+      :mini-variant="$vuetify.breakpoint.mdAndDown || miniVariant"
+      :permanent="permanent"
       clipped
-      :app="$vuetify.breakpoint.smAndDown"
-      :absolute="$vuetify.breakpoint.mdAndUp"
-      :temporary="$vuetify.breakpoint.smAndDown && temporary">
+      fixed
+      app>
+
+      <v-list-item class="mb-4" v-if="$vuetify.breakpoint.lgAndUp">
+          <v-list-item-action @click.stop="miniVariant = !miniVariant">
+            <v-icon color="secondary" large v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'" />
+          </v-list-item-action>
+      </v-list-item>
 
       <v-list>
-        <v-list-item class="mb-4">
-          <v-list-item-action @click.prevent="toggle()">
-            <v-icon color="secondary" large v-html="'fa-angle-left'" />
-          </v-list-item-action>
-        </v-list-item>
-
         <v-list-item
           value="true"
           v-for="(item, i) in items"
           :key="i"
-          @click.prevent="selectedPage = item.currentPage"
-          @click.stop="toggle()">
+          @click.prevent="selectedPage = item.currentPage">
           <v-list-item-action>
             <v-icon color="secondary">{{ item.icon }}</v-icon>
           </v-list-item-action>
@@ -83,10 +86,9 @@ export default {
   data () {
     return {
       permanent: false,
-      temporary: false,
+      miniVariant: false,
       selectedPage: 'experiences',
       drawer: null,
-      fixed: false,
       items: [
       {
         icon: 'fa-briefcase',
@@ -115,14 +117,6 @@ export default {
       // }
       ]     
     }
-  },
-    methods: {
-      toggle: function () {
-        if(this.$vuetify.breakpoint.smAndDown || this.temporary){
-          this.temporary = !this.temporary;
-        }
-        this.permanent = !this.permanent;
-      },
   },
 }
 </script>

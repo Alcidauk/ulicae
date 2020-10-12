@@ -1,5 +1,5 @@
 <template>
-  <v-layout fill-height background lighten-1>
+  <v-container>
     <v-btn
       color="#320b86"
       v-if="!$vuetify.breakpoint.lgAndUp"
@@ -11,7 +11,7 @@
     </v-btn>
     <v-navigation-drawer
       class="violet-dark-background"
-      :mini-variant="miniVariant"
+      :mini-variant="$vuetify.breakpoint.mdAndDown || miniVariant"
       :permanent="permanent"
       clipped
       fixed
@@ -19,11 +19,12 @@
     >
 
       <v-list>
-        <v-list-item class="mb-4">
+        <v-list-item class="mb-4" v-if="$vuetify.breakpoint.lgAndUp">
             <v-list-item-action @click.stop="miniVariant = !miniVariant">
               <v-icon color="secondary" large v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'" />
             </v-list-item-action>
         </v-list-item>
+        
         <v-list-item value="true" v-for="(item, i) in items" :key="i" :to="item.link">
             <v-list-item-action>
               <v-icon color="secondary">{{ item.icon }}</v-icon>
@@ -57,7 +58,7 @@
         <router-view xs12></router-view>
       </v-card>
     </v-container>
-  </v-layout>
+  </v-container>
 </template>
 
 <script>
@@ -67,7 +68,6 @@ export default {
     return {
       miniVariant: false,
       permanent: false,
-      fixed: false,
       items: [
         {
           icon: "fa-home",

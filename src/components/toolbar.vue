@@ -1,21 +1,31 @@
 <template>
-  <v-toolbar app fixed :clipped-left="true" color="primary">
-    <div class="toolbar-title">
-      <v-toolbar-title><span class="title-font secondary--text">{{title}}</span><span class="extension-font secondary--text">.com</span></v-toolbar-title>
-      <v-toolbar-title class="subtitle-font primary--text text--lighten-4 text-lg-right">Pierre Rognon</v-toolbar-title>
-    </div>
-      <v-toolbar-items justify-space-around>
-        <v-btn :to="{path:'/home'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-home</v-icon>Accueil</v-btn>
-        <v-btn :to="{path:'/cv'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-address-card</v-icon>CV</v-btn>
-        <v-btn :to="{path:'/notes'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-clipboard</v-icon>Notes</v-btn>
-        <v-btn :to="{path:'/portfolio'}" flat color="secondary accent-2"><v-icon left color="secondary accent-1">fa-images</v-icon>Albums</v-btn>
-        <v-btn :to="{path:'/cinelog/home'}" depressed color="#320b86" class="secondary--text">           
-          <v-img height="30" width="30" class="mr-3" :src="require(`@/assets/cinelog.png`)"/>
-          CineLog
-        </v-btn>
-      </v-toolbar-items>
-      <v-spacer></v-spacer>
-    </v-toolbar>
+  <v-app-bar app fixed :clipped-left="true" color="primary">
+      <v-app-bar-title>
+          <span class="title-font secondary--text">{{title}}</span><span class="extension-font secondary--text">.com</span>
+          <span class="subtitle-font primary--text text--lighten-4 text-lg-right">Pierre Rognon</span>
+      </v-app-bar-title>
+
+      <template v-slot:extension>
+        <v-tabs align-with-title>
+          <v-tab :to="{path:'/home'}" color="secondary accent-2">
+            <v-icon left color="secondary accent-1">fa-home</v-icon>Accueil
+          </v-tab>
+          <v-tab :to="{path:'/cv'}" color="secondary accent-2">
+            <v-icon left color="secondary accent-1">fa-address-card</v-icon>CV
+          </v-tab>
+          <v-tab :to="{path:'/notes'}" color="secondary accent-2">
+            <v-icon left color="secondary accent-1">fa-clipboard</v-icon>Notes
+          </v-tab>
+          <v-tab :to="{path:'/portfolio'}" color="secondary accent-2">
+            <v-icon left color="secondary accent-1">fa-images</v-icon>Albums
+          </v-tab>
+          <v-tab :to="{path:'/cinelog/home'}" class="secondary--text">
+            <v-img height="30" width="30" class="mr-3" :src="require(`@/assets/cinelog.png`)"/>CineLog
+          </v-tab>
+        </v-tabs>
+      </template>
+
+    </v-app-bar>
 </template>
 
 <script>

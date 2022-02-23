@@ -19,21 +19,21 @@
     >
 
       <v-list>
-        <v-list-tile class="mb-4">
-            <v-list-tile-action @click.stop="miniVariant = !miniVariant">
+        <v-list-item class="mb-4">
+            <v-list-item-action @click.stop="miniVariant = !miniVariant">
               <v-icon color="secondary" large v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'" />
-            </v-list-tile-action>
-        </v-list-tile>
-        <v-list-tile value="true" v-for="(item, i) in items" :key="i" :to="item.link">
-            <v-list-tile-action>
+            </v-list-item-action>
+        </v-list-item>
+        <v-list-item value="true" v-for="(item, i) in items" :key="i" :to="item.link">
+            <v-list-item-action>
               <v-icon color="secondary" v-html="item.icon" />
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title class="secondary--text text--lighten-2">
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title class="secondary--text text--lighten-2">
                 <h3 class="secondary--text" v-text="item.title" />
-              </v-list-tile-title>
-            </v-list-tile-content>
-        </v-list-tile>
+              </v-list-item-title>
+            </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 
@@ -81,7 +81,7 @@ export default {
         },
         {
           icon: "fa-link",
-          title: "Liens utiles",
+          title: "Liens uitems",
           link: "/cinelog/links"
         },
         {

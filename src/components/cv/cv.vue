@@ -16,31 +16,31 @@
         <v-icon large color="secondary" v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'"/>
       </v-btn>
       <v-list>
-        <v-list-tile
+        <v-list-item
           value="true"
           v-for="(item, i) in items"
           :key="i"
           @click.prevent="selectedPage = item.currentPage">
-          <v-list-tile-action>
+          <v-list-item-action>
             <v-icon color="secondary" v-html="item.icon"/>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title class="secondary--text text--lighten-2" v-text="item.title"/>
-          </v-list-tile-content>
-        </v-list-tile>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title class="secondary--text text--lighten-2" v-text="item.title"/>
+          </v-list-item-content>
+        </v-list-item>
 
-        <v-list-tile
+        <v-list-item
           style="background-color: #D32F2F;"
           href="CV_website.pdf" 
           target="#"
           key="cv">
-          <v-list-tile-action>
+          <v-list-item-action>
             <v-icon class="secondary--text">fa-file-pdf</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title class="secondary--text text--lighten-2">CV au format PDF</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+          </v-list-item-action>
+          <v-list-item-content>
+            <v-list-item-title class="secondary--text text--lighten-2">CV au format PDF</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
 

@@ -18,4 +18,7 @@ export default {
 .knowledge-image {
   overflow: hidden;
 }
+.knowledge-image img {
+  width: 100%;
+}
 </style>

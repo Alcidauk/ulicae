@@ -30,9 +30,46 @@ export default {
     return {
       experiences: [
         {
+          title: "Ingénieur Développement / DevOps",
+          place: "CN Films (Paris, France)",
+          dates: "depuis 04/2021",
+          diploma: "Développement logiciel et gestion des infrastructures serveur de l'entreprise",
+          subDiploma: [
+            { 
+              title: "Conception et développement d'une nouvelle version de Cinego Stock",
+              content: "- réécriture en Angular.io \"from scratch\" d'un frontend AngularJS\n" +
+              "- réflexion autour d'une évolution de l'UX de l'applicatif",
+              icon: "fa-flask"
+            },
+            { 
+              title: "Développement sur les différents produits existants proposés par CN Films",
+              content: "- développement Backend du coeur applicatif sur plate-forme Python, à l'aide du framework Pyramid\n" +
+              "- développement Frontend de l'application principale Cinego Distri en Angular.io",
+              icon: "fa-industry"
+            },
+            { 
+              title: "Aide au déploiement d'un réseau de serveurs finaux au sein de cinémas",
+              content: "- réflexion sur les prérequis de la machine fournie par le fournisseur\n" +
+              "- développement d'un script d'automatisation de l'installation des serveurs\n" +
+              "- suivi du déploiement des machines en lien avec un chargé de projet\n" +
+              "- interventions sur site, debug de configuration réseau des serveurs",
+              icon: "fa-industry"
+            },
+            { 
+              title: "Création d'un pôle DevOps / Infrastructure",
+              content: "- mise en place d'une supervision des serveurs de l'entreprise via l'outil Prometheus\n" +
+              "- déploiement de Grafana, outil d'exploitation des données de monitoring fournies par Prometheus\n" +
+              "- développement de playbooks Ansible pour l'automatisation des installations et configurations des serveursn" +
+              "- analyse des performances des serveurs et étude des prestataires pour l'optimisation des serveurs",
+              icon: "fa-flask"
+            },
+          ],
+          imgsrc: "cnfilms_short.png"
+        },
+        {
           title: "Ingénieur développement FullStack",
           place: "CN Films (Paris, France)",
-          dates: "depuis 12/2018",
+          dates: "12/2018 à 03/2021",
           diploma: "Développement d'un ensemble de produits à destination des distributeurs et exploitants dans le domaine du cinéma",
           subDiploma: [
             { 

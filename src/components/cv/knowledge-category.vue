@@ -30,19 +30,12 @@ export default {
       techKnowledges: [
         {
           title: "Linux",
-          content: "Très bonne aisance avec les environnements Linux.\n" +
-          "+ Utilisation d'une distribution Debian de manière personnelle;\n" +
+          content: "Grande aisance avec les environnements Linux.\n" +
+          "+ Utilisation de la distribution Debian de manière personnelle;\n" +
           "+ Travail avec des distributions dérivées d'Ubuntu dans le cadre professionnel;\n" +
           "+ Connaissance des distributions RedHat et dérivées (CentOs, Fedora);\n" +
           "+ Rudiments dans l'utilisation d'une distribution ArchLinux.",
           imgsrc: "linux.png"
-        },
-        {
-          title: "LaTeX",
-          content: "Bonnes connaissances usuelles de ce langage.\n" +
-           "+ Rédaction de rapports (stage, cahier de spécifications);\n" +
-           "+ Utilisation de la classe permettant de générer des diaporamas: Beamer.",
-          imgsrc: "latex.png"
         },
         {
           title: "Java",
@@ -86,18 +79,11 @@ export default {
           imgsrc: "nuxeo.png"
         },
         {
-          title: "Vaadin",
-          content: "Bonne maîtrise du développement d'une application autour de ce Framework.\n" +
-          "+ Connaissances autour du système de widgets proposés par Vaadin;\n" +
-          "+ Utilisation du pattern recommandé par ce framework: MVVP (Modèle-Vue Vue-Présentation).",
-          imgsrc: "vaadin.png"
-        },
-        {
           title: "Docker",
-          content: "Aisance dans l'utilisation de cette technologie.\n" +
-          "+ Utilisation dans le cadre d'un environnement de développement (SKINsoft);\n" +
+          content: "Grande aisance dans l'utilisation de cette technologie.\n" +
+          "+ Utilisation dans le cadre d'environnements de développement (SKINsoft, CN Films);\n" +
           "+ Utilisation sur un serveur personnel en production;\n" +
-          "+ Maîtrise de l'utilisation de conteneurs existants, de la création de nouveaux conteneurs, de la création d'une image;\n" +
+          "+ Maîtrise de la création d'images et de conteneurs, ainsi que des notions de réseau;\n" +
           "+ Maîtrise de la surcouche Docker Compose.",
           imgsrc: "docker.png"
         },
@@ -110,18 +96,10 @@ export default {
         },
         {
           title: "Shell / Bash",
-          content: "Très bonne aisance dans l'usage d'une ligne de commandes. Des bases dans le développement de script bash.\n" +
+          content: "Grande aisance dans l'utilisation de la ligne de commande. Bases dans le développement de script bash.\n" +
           "+ Utilisation quotidienne du terminal dans le cadre de l'environnement de développement;\n" +
-          "+ Rédaction de scripts shell utilitaires de manière occasionnelle.",
+          "+ Rédaction de scripts shell utilitaires de manière occasionnelle. Maîtrise de commandes utiliaires (sed, grep, wc, etc.)",
           imgsrc: "shell.png"
-        },
-        {
-          title: "ExtJS",
-          content: "Bonnes connaissances autour du framework.\n" +
-          "+ Utilisation quotidienne dans le cadre de développements sur une ancienne version (2.3);\n" +
-          "+ Bonne compréhension des composants principaux proposés par ExtJS;\n" +
-          "+ Aisance dans les notions propres à ExtJS (extension de composants, configuration, évènements).",
-          imgsrc: "extjs.png"
         },
         {
           title: "Android",
@@ -132,24 +110,17 @@ export default {
           imgsrc: "android.png"
         },
         {
-          title: "PhP",
-          content: "Rudiments et développements partiels sur d'anciennes versions.\n" +
-          "+ Compréhension de la notion de langage script;\n" +
-          "+ Connaissances de base sur le framework Symfony et son ORM Doctrine.",
-          imgsrc: "php.png"
-        },
-        {
-          title: "Javascript",
-          content: "Connaissances à travers l'utlisation de framework tels que Vue.js et ExtJS.\n" +
-          "+ Développement régulier dans ce langage;\n" +
+          title: "Javascript / Typescript",
+          content: "Bonnes connaissances à travers l'utlisation des frameworks Angular.io et Vue.JS.\n" +
+          "+ Développement quotidien dans le langage Typescript via l'utilisation d'Angular.io;\n" +
           "+ Rudiments sur les différentes versions de JS (ES2016).",
           imgsrc: "javascript.png"
         },
         {
           title: "Python",
-          content: "Rudiments et développements sur d'anciennes versions.\n" +
-          "+ Développement de quelques scripts;\n" +
-          "+ Développement d'une application avec interface graphique en GTK 2.",
+          content: "Bonne connaissance de Python 3.\n" +
+          "+ Développement quotidien sur une application de type API (CN Films);\n" +
+          "+ Maîtrise du framework Pyramid, ainsi que TruboGears.",
           imgsrc: "python.png"
         },
         {
@@ -178,7 +149,7 @@ export default {
         {
           title: "Méthode de travail",
           content: "Rigueur et suivi dans les développements réalisés.\n" +
-          "+ Connaissance d'outils tels que Trello ou Jira;\n" +
+          "+ Connaissance d'outils tels que Trello ou Gitlab;\n" +
           "+ Habitude du bon suivi des développements;\n" +
           "+ Compétences dans l'intégration continue et le déploiement de livrables.",
           imgsrc: null,

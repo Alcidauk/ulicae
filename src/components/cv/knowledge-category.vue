@@ -14,7 +14,6 @@
 
 <script>
 import KnowledgePart from './knowledge-part'
-import marked from 'marked'
 
 export default {
   name: 'KnowledgeCategory',

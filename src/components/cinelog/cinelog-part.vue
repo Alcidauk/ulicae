@@ -15,7 +15,7 @@
       this.desc = require('../../assets/cinelog-' + this.$route.params.part + '.md')
     },
     watch: {
-      $route(_to, _from) {
+      $route() {
         this.desc = require('../../assets/cinelog-' + this.$route.params.part + '.md')
       }
     }

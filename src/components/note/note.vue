@@ -27,7 +27,7 @@
 
   <script>
 import axios from "axios";
-import marked from "marked";
+import { marked } from 'marked';
 
 export default {
   name: "Note",
@@ -46,7 +46,7 @@ export default {
   },
   methods: {
     compiledMarkdown: function (item) {
-      return marked(item, { sanitize: true });
+      return marked.parse(item, { sanitize: true });
     },
   },
   data() {

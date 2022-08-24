@@ -31,7 +31,7 @@
 
 <script>
 import Knowledge from './knowledge'
-import marked from 'marked'
+import { marked } from 'marked';
 
 export default {
   name: 'KnowledgePart',
@@ -46,7 +46,7 @@ export default {
       this.currentKnowledge = item
     },
     compiledMarkdown: function (item) {
-      return marked(item, { sanitize: true })
+      return marked.parse(item, { sanitize: true })
     }
   },
   components: {

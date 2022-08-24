@@ -40,7 +40,7 @@
 </template>
 
 <script>
-import marked from "marked";
+import { marked } from 'marked';
 
 export default {
   name: "ExperienceStep",
@@ -54,7 +54,7 @@ export default {
   },
   methods: {
     compiledMarkdown: function (item) {
-      return marked(item, { sanitize: true });
+      return marked.parse(item, { sanitize: true });
     },
   },
 };

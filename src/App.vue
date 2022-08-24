@@ -57,13 +57,11 @@
 </template>
 
 <script>
-import Cv from "./components/cv/cv";
 import Toolbar from "./components/toolbar";
 
 export default {
   name: "App",
   components: {
-    Cv,
     Toolbar,
   },
   methods: {

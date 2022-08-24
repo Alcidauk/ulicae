@@ -69,7 +69,6 @@ import FormationCategory from './formation-category'
 import KnowledgeCategory from './knowledge-category'
 import ExperienceCategory from './experience-category'
 import HobbyCategory from './hobby-category'
-import LinkCategory from './link-category'
 
 export default {
   name: 'Cv',
@@ -80,8 +79,7 @@ export default {
     FormationCategory,
     KnowledgeCategory,
     ExperienceCategory,
-    HobbyCategory,
-    LinkCategory
+    HobbyCategory
   },
   data () {
     return {

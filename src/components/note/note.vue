@@ -3,9 +3,8 @@
     <v-container>
       <h1 align="center" justify="center">Notes</h1>
 
-      <v-flex justify="center" layout>
+      <v-flex justify="center" layout v-if="notes.length !== 0">
         <v-card
-          v-if="notes.length !== 0"
           v-for="(note, index) in notes"
           :key="index"
           class="ma-2"

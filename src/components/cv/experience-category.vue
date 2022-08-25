@@ -29,51 +29,81 @@ export default {
   },
   data() {
     return {
-      experiences: [
+       experiences: [
+        {
+          title: "Ingénieur Développement / DevOps",
+          place: "CN Films (Paris, France)",
+          dates: "d'avril 2021 à juin 2022 (1 an et 2 mois)",
+          diploma: "Développement logiciel et gestion des infrastructures serveur de l'entreprise",
+          subDiploma: [
+            { 
+              title: "Conception et développement d'une nouvelle version de Cinego Stock",
+              content: "- réécriture en Angular.io \"from scratch\" d'un frontend AngularJS\n" +
+              "- réflexion autour de l'évolution de l'UX du produit",
+              icon: "fa-flask"
+            },
+            { 
+              title: "Développement sur les différents produits existants proposés par CN Films",
+              content: "- développement Backend du coeur applicatif sur plate-forme Python, à l'aide du framework Pyramid\n" +
+              "- développement Frontend de l'application principale Cinego Distri en Angular.io",
+              icon: "fa-industry"
+            },
+            { 
+              title: "Aide au déploiement d'un réseau de serveurs finaux au sein de cinémas",
+              content: "- réflexion sur les prérequis de la machine fournie par le fournisseur\n" +
+              "- développement d'un script d'automatisation de l'installation des serveurs\n" +
+              "- suivi du déploiement des machines en lien avec un chargé de projet\n" +
+              "- interventions sur site, debug de configuration réseau des serveurs",
+              icon: "fa-industry"
+            },
+            { 
+              title: "Création d'un pôle DevOps / Infrastructure",
+              content: "- mise en place d'une supervision des serveurs de l'entreprise via l'outil Prometheus\n" +
+              "- déploiement de Grafana, outil d'exploitation des données de monitoring fournies par Prometheus\n" +
+              "- développement de playbooks Ansible pour l'automatisation des installations et configurations des serveurs\n" +
+              "- analyse des performances des serveurs et étude des prestataires pour l'optimisation des serveurs",
+              icon: "fa-flask"
+            },
+          ],
+          imgsrc: "cnfilms_short.png"
+        },
         {
           title: "Ingénieur développement FullStack",
           place: "CN Films (Paris, France)",
-          dates: "depuis 12/2018",
-          diploma:
-            "Développement sur une suite de produits à destination des distributeurs et exploitants dans le domaine du cinéma",
+          dates: "de décembre 2018 à mars 2021 (2 ans et 3 mois)",
+          diploma: "Développement d'un ensemble de produits à destination des distributeurs et exploitants dans le domaine du cinéma",
           subDiploma: [
-            {
-              title:
-                "Conception et développement d'une nouvelle version de Cinego Distri",
-              content:
-                '- conception et développement "from scratch" d\'un nouveau Frontend, en Angular 2 (versions 7 et supérieures)\n' +
-                "- refonte du coeur technique Backend afin de disposer d'une API REST",
-              icon: "fa-flask",
+            { 
+              title: "Conception et développement d'une nouvelle version de Cinego Distri",
+              content: "- conception et développement \"from scratch\" d'un nouveau Frontend, en Angular.io (version 7 et +)\n" +
+              "- refonte du coeur technique Backend afin de disposer d'une API REST",
+              icon: "fa-flask"
             },
-            {
-              title:
-                "Développement sur les différents produits existants proposés par CN Films",
-              content:
-                "- développement Backend du coeur applicatif sur plate-forme Python, à l'aide des framework Pyramid et TurboGears\n" +
-                "- développement de templates en Frontend",
-              icon: "fa-industry",
+            { 
+              title: "Développement sur les différents produits existants proposés par CN Films",
+              content: "- développement Backend du coeur applicatif sur plate-forme Python, à l'aide des frameworks Pyramid et TurboGears\n" +
+              "- développement de templates HTML en Frontend",
+              icon: "fa-industry"
             },
-            {
+            { 
               title: "Mise en place d'un système d'intégration continue",
-              content:
-                "- utilisation de Gitlab CI, la couche d'intégration continue de Gitlab\n" +
-                "- mise en place de scripts de déploiement, de tests unitaires et d'intégration dans des conteneurs Docker",
-              icon: "fa-industry",
+              content: "- utilisation de Gitlab CI, la couche d'intégration continue de Gitlab\n" +
+              "- mise en place de scripts de déploiement, de tests unitaires et d'intégration dans des conteneurs Docker",
+              icon: "fa-industry"
             },
-            {
+            { 
               title: "Participation à la relation client",
-              content:
-                "- participation aux rendez-vous clients\n" +
-                "- suivi de demandes en lien avec le support client",
-              icon: "fa-handshake",
-            },
+              content: "- participation aux rendez-vous clients\n" +
+              "- suivi de demandes en lien avec le support client",
+              icon: "fa-handshake"
+            }
           ],
-          imgsrc: "cnfilms_short.png",
+          imgsrc: "cnfilms_short.png"
         },
         {
           title: "Lead technique & ingénieur développement FullStack",
           place: "SKINsoft (Besançon, France)",
-          dates: "04/2017 à 07/2018",
+          dates: "d'avril 2017 à juillet 2018 (1 an et 3 mois)",
           diploma:
             "Conception, définition des orientations techniques logicielles, et développement d'une suite logicielle de gestion de collections d'œuvres",
           subDiploma: [
@@ -115,7 +145,7 @@ export default {
         {
           title: "Ingénieur développement fullstack",
           place: "SKINsoft (Besançon, France)",
-          dates: "08/2015 à 03/2017",
+          dates: "d'août 2015 à mars 2017 (1 an et 7 mois)",
           diploma:
             "Conception, spécification et développement d'une suite logicielle de gestion de collections d'œuvres",
           subDiploma: [
@@ -157,7 +187,7 @@ export default {
         {
           title: "Ingénieur informatique stagiaire",
           place: "SKINsoft (Besançon, France)",
-          dates: "02/2015 à 07/2015",
+          dates: "de février à juillet 2015 (6 mois)",
           diploma:
             "Développement d'un nouveau produit mobile permettant le récolement des œuvres d'un musée",
           subDiploma: [
@@ -185,7 +215,7 @@ export default {
         {
           title: "Technicien informatique",
           place: "Kimoce (Mulhouse, France)",
-          dates: "07/2014",
+          dates: "juillet 2014",
           diploma:
             "Développement à majorité Backend sur une application Web en Java EE (CDD d’un mois, suite au stage d’assistant ingénieur)",
           subDiploma: [
@@ -202,7 +232,7 @@ export default {
         {
           title: "Ingénieur informatique assistant stagiaire",
           place: "Kimoce (Mulhouse, France)",
-          dates: "09/2013 à 02/2014",
+          dates: "de septembre 2013 à février 2014 (6 mois)",
           diploma:
             "Développement d’une application Web en SaaS (Software As A Service)",
           subDiploma: [
@@ -226,35 +256,7 @@ export default {
             },
           ],
           imgsrc: "kimoce.jpg",
-        },
-        {
-          title:
-            "Technicien informatique stagiaire, puis technicien informatique",
-          place: "SIDEO Bedeville (Fesches le Chatel, France)",
-          dates: "04/2012 à 07/2012",
-          diploma:
-            "Réalisation d’un applicatif en intranet en PhP pour le suivi de la production d'un atelier industriel",
-          subDiploma: [
-            {
-              title:
-                "Conception d'un applicatif de suivi de production de pièces automobiles",
-              content:
-                "- recherches autour du système d'informations existant: Sybase\n" +
-                "- étude de différents choix techniques possibles\n" +
-                "- choix et mise en place d'une preuve de concept autour d'une application PhP",
-              icon: "fa-industry",
-            },
-            {
-              title: "Développement de l'applicatif PhP de suivi de production",
-              content:
-                "- développement d'une couche de connexion au système d'information\n" +
-                "- développement d'un générateur de requêtes permettant de créer des rapports d'informations sur les informations voulues\n" +
-                "- développement d'une vue en HTML et Javascript permettant d'afficher les rapports dans l'atelier de production",
-              icon: "fa-flask",
-            },
-          ],
-          imgsrc: "sideo.jpg",
-        },
+        }
       ],
     };
   },

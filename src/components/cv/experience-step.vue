@@ -7,9 +7,9 @@
           </v-avatar>
           <div class="ml-5 d-flex flex-column justify-center">
               <h3 class="page-title">{{ title }}</h3>
-              <div class="primary--text">{{ dates }}</div>
-              <div class="primary--text">{{ place }}</div>
-              <div class="subheading">{{ diploma }}</div>
+              <div class="primary--text mt-1">{{ dates }}</div>
+              <div class="primary--text mt-1">{{ place }}</div>
+              <div class="subheading mt-1">{{ diploma }}</div>
           </div>
         </v-layout>
     </v-expansion-panel-header>

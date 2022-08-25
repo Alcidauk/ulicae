@@ -32,10 +32,71 @@ export default {
           title: "Linux",
           content: "Grande aisance avec les environnements Linux.\n" +
           "+ Utilisation d'une distribution Debian de manière personnelle;\n" +
-          "+ Travail avec des distributions dérivées d'Ubuntu dans le cadre professionnel;\n" +
-          "+ Connaissance des distributions RedHat et dérivées (CentOs, Fedora);\n" +
+          "+ Travail avec des distributions dérivées de Debian dans le cadre professionnel;\n" +
+          "+ Connaissance de base des distributions RedHat et dérivées (CentOs, Fedora);\n" +
           "+ Rudiments dans l'utilisation d'une distribution ArchLinux.",
           imgsrc: "linux.png"
+        },
+        {
+          title: "Python",
+          content: "Bonnes connaissances sur Python 2 et 3 en environnement professionnel.\n" +
+          "+ Développement d'un serveur backend WSGi;\n" +
+          "+ Maîtrise de librairies diverses (Redis, Pytest, Waitress, Guinicorn, etc.).",
+          imgsrc: "python.png"
+        },
+        {
+          title: "Python Pyramid",
+          content: "Utilisation confirmée de ce framework Web.\n" +
+          "+ Développement sous forme d'un serveur Web de templates;\n" +
+          "+ Implémentation comme serveur d'une API REST dialoguant avec un frontend JS.",
+          imgsrc: "pyramid.png"
+        },
+        {
+          title: "Angular 2",
+          content: "Utilisation avancée du framework dans un environnement de production.\n" +
+          "+ Développement \"from scratch\" de l'application métier principale d'un éditeur logiciel;\n" +
+          "+ Utilisation du toolkit Nebular, de ses modules d'authentification et de ses composants graphiques;\n" +
+          "+ Maîtrise des notions avancées de routage, de modules, de test unitaire et d'intégration (avec Jasmine et Karma).",
+          imgsrc: "angular.jpeg"
+        },
+        {
+          title: "Javascript / Typescript",
+          content: "Bonne maîtrise du langage à travers l'utlisation de framework tels qu'Angular 2+ et Vue.js.\n" +
+          "+ Développement quotidien dans ce langage;\n" +
+          "+ Connaissance des différentes versions de JS (ES2016);" +
+          "+ Utilisation de typescript et de ses notions objet (typages, interfaces, classe abstraite, etc.).",
+          imgsrc: "javascript.png"
+        },
+        {
+          title: "Android",
+          content: "Aisance dans le développement natif sur cette plateforme.\n" +
+          "+ Développement de plusieurs applicatifs Android dans le cadre personnel et professionnel;\n" +
+          "+ Socle de connaissances sur les notions d'une application Android (Activité, Cycle de vie);\n" +
+          "+ Connaissances de base dans les composants graphiques disponibles.",
+          imgsrc: "android.png"
+        },
+        {
+          title: "Shell / Bash",
+          content: "Grande aisance dans l'usage d'une ligne de commandes. Des bases dans le développement de script bash.\n" +
+          "+ Utilisation quotidienne du terminal dans le cadre de l'environnement de développement;\n" +
+          "+ Rédaction de scripts shell utilitaires de manière occasionnelle.",
+          imgsrc: "shell.png"
+        },
+        {
+          title: "Docker",
+          content: "Aisance dans l'utilisation de cette technologie.\n" +
+          "+ Utilisation dans le cadre professionnel comme serveurs de développement;\n" +
+          "+ Utilisation sur un serveur personnel en production;\n" +
+          "+ Maîtrise de l'utilisation de conteneurs existants, de la création de nouveaux conteneurs, de la création d'une image;\n" +
+          "+ Maîtrise de la surcouche Docker Compose.",
+          imgsrc: "docker.png"
+        },
+        {
+          title: "Vue.js",
+          content: "Connaissances des fondements de ce framework.\n" +
+          "+ Développements ponctuels de composants UI;\n" +
+          "+ Connaissance et compréhension de la notion de modèle.",
+          imgsrc: "vue.png"
         },
         {
           title: "Java",
@@ -72,49 +133,11 @@ export default {
           imgsrc: "nuxeo.png"
         },
         {
-          title: "Python",
-          content: "Bonnes connaissances sur Python 2 et 3 en environnement professionnel.\n" +
-          "+ Développement d'un serveur backend WSGi;\n" +
-          "+ Utilisation de diverses librairies (Redis, Pytest, Waitress, Guinicorn, etc.).",
-          imgsrc: "python.png"
-        },
-        {
-          title: "Python Pyramid",
-          content: "Utilisation confirmée de ce framework Web.\n" +
-          "+ Utilisation sous forme d'un serveur Web de templates;\n" +
-          "+ Utilisation comme serveur d'une API REST dialoguant avec un frontend Javascript.",
-          imgsrc: "pyramid.png"
-        },
-        {
-          title: "Javascript / Typescript",
-          content: "Bonne maîtrise du langage à travers l'utlisation de framework tels qu'Angular 2+ et Vue.js.\n" +
-          "+ Développement quotidien dans ce langage;\n" +
-          "+ Connaissance des différentes versions de JS (ES2016);" +
-          "+ Utilisation de typescript et de ses notions objet (typages, interfaces, classe abstraite, etc.).",
-          imgsrc: "javascript.png"
-        },
-        {
-          title: "Angular 2",
-          content: "Utilisation avancée du framework dans un environnement de production.\n" +
-          "+ Développement \"from scratch\" de l'application métier principale d'un éditeur logiciel;\n" +
-          "+ Utilisation du toolkit Nebular, de ses modules d'authentification et de ses composants graphiques;\n" +
-          "+ Maîtrise des notions avancées de routage, de modules, de test unitaire et d'intégration (avec Jasmine et Karma).",
-          imgsrc: "angular.jpeg"
-        },
-        {
-          title: "Vue.js",
-          content: "Connaissances des fondements de ce framework.\n" +
-          "+ Développements ponctuels de composants UI;\n" +
-          "+ Connaissance et compréhension de la notion de modèle.",
-          imgsrc: "vue.png"
-        },
-        {
-          title: "ExtJS",
-          content: "Bonnes connaissances autour du framework.\n" +
-          "+ Utilisation quotidienne dans le cadre de développements sur une ancienne version (2.3);\n" +
-          "+ Bonne compréhension des composants principaux proposés par ExtJS;\n" +
-          "+ Aisance dans les notions propres à ExtJS (extension de composants, configuration, évènements).",
-          imgsrc: "extjs.png"
+          title: "Git",
+          content: "Bonnes connaissances dans l'utilisation de ce gestionnaire de versions.\n" +
+          "+ Utilisation des fonctionnalités de branche;\n" +
+          "+ Aisance dans l'utilisation d'outils satellites à Git: Github, Gitlab.",
+          imgsrc: "git.png"
         },
         {
           title: "PhP",
@@ -131,45 +154,9 @@ export default {
           imgsrc: "mongo.png"
         },
         {
-          title: "Docker",
-          content: "Aisance dans l'utilisation de cette technologie.\n" +
-          "+ Utilisation dans le cadre d'un environnement de développement (SKINsoft);\n" +
-          "+ Utilisation sur un serveur personnel en production;\n" +
-          "+ Maîtrise de l'utilisation de conteneurs existants, de la création de nouveaux conteneurs, de la création d'une image;\n" +
-          "+ Maîtrise de la surcouche Docker Compose.",
-          imgsrc: "docker.png"
-        },
-        {
-          title: "Shell / Bash",
-          content: "Grande aisance dans l'usage d'une ligne de commandes. Des bases dans le développement de script bash.\n" +
-          "+ Utilisation quotidienne du terminal dans le cadre de l'environnement de développement;\n" +
-          "+ Rédaction de scripts shell utilitaires de manière occasionnelle.",
-          imgsrc: "shell.png"
-        },
-        {
-          title: "Android",
-          content: "Aisance dans le développement natif sur cette plateforme.\n" +
-          "+ Développement de plusieurs applicatifs Android dans le cadre personnel et professionnel;\n" +
-          "+ Socle de connaissances sur les notions d'une application Android (Activité, Cycle de vie);\n" +
-          "+ Connaissances de base dans les composants graphiques disponibles.",
-          imgsrc: "android.png"
-        },
-        {
-          title: "Svn",
-          content: "Utilisation aisée de ce gestionnaire de versions.",
-          imgsrc: "svn.png"
-        },
-        {
-          title: "Git",
-          content: "Bonnes connaissances dans l'utilisation de ce gestionnaire de versions.\n" +
-          "+ Utilisation des fonctionnalités de branche;\n" +
-          "+ Aisance dans l'utilisation d'outils satellites à Git: Github, Gitlab.",
-          imgsrc: "git.png"
-        },
-        {
           title: "LaTeX",
-          content: "Bonnes connaissances usuelles de ce langage.\n" +
-           "+ Rédaction de rapports (stage, cahier de spécifications);\n" +
+          content: "Connaissances usuelles de ce langage.\n" +
+           "+ Rédaction de rapports (stage, cahier de spécifications) durant les études;\n" +
            "+ Utilisation de la classe permettant de générer des diaporamas: Beamer.",
           imgsrc: "latex.png"
         },
@@ -185,11 +172,20 @@ export default {
           icon: "fa-chart-pie"
         },
         {
+          title: "DevOps et Administration système",
+          content: "Capacité à automatiser et optimiser le processus de développement d'un applicatif et d'un parc machines" +
+          "+ Habitué à mettre en place et maintenir un système d'intégration continue;\n" +
+          "+ Capacité à mener efficacement la supervision d'un ensemble de machine;\n" +
+          "+ Formé à gérer le déploiement automatique de scripts d'installation et de configuration machine.",
+          imgsrc: null,
+          icon: "fa-cubes"
+        },
+        {
           title: "Méthode de travail",
           content: "Rigueur et suivi dans les développements réalisés.\n" +
-          "+ Connaissance d'outils tels que Trello ou Jira;\n" +
+          "+ Connaissance d'outils tels que Trello ou encore Gitlab;\n" +
           "+ Habitude du bon suivi des développements;\n" +
-          "+ Compétences dans l'intégration continue et le déploiement de livrables.",
+          "+ Optimisation de l'environnement de développement.",
           imgsrc: null,
           icon: "fa-ruler"
         },

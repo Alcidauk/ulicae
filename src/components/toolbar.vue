@@ -1,6 +1,6 @@
 <template>
     <v-app-bar app fixed :clipped-left="true" color="primary" elevate-on-scroll>
-      <v-app-bar-nav-icon v-if="!$vuetify.breakpoint.lgAndUp" class="secondary--text" @click="$emit('toggle-navigate')">
+      <v-app-bar-nav-icon v-if="$vuetify.breakpoint.mobile" class="secondary--text" @click="$emit('toggle-navigate')">
         <v-icon left color="secondary accent-1">fa-bars</v-icon>
       </v-app-bar-nav-icon>
 
@@ -13,7 +13,7 @@
         </div>
       </v-toolbar-title>
 
-      <v-toolbar-items justify-space-around  v-if="$vuetify.breakpoint.lgAndUp">
+      <v-toolbar-items justify-space-around  v-if="!$vuetify.breakpoint.mobile">
         <v-btn :to="{ path: '/home' }" depressed class="primary accent-2 secondary--text">
           <v-icon left color="secondary accent-1">fa-home</v-icon>
           Accueil

@@ -36,7 +36,7 @@
             <v-btn :to="{ path: tabs[n - 1].path }" fab color="secondary">
               <v-flex>
                 <v-icon 
-                  :x-large="$vuetify.breakpoint.lgAndUp" 
+                  :x-large="!$vuetify.breakpoint.mobile" 
                   :large="$vuetify.breakpoint.smAndUp" 
                 color="primary">
                 {{ tabs[n - 1].icon }}

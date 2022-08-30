@@ -2,7 +2,7 @@
   <v-container>
     <v-btn
       color="#320b86"
-      v-if="!$vuetify.breakpoint.lgAndUp"
+      v-if="$vuetify.breakpoint.mobile"
       fab
       left
       @click.stop="permanent = !permanent"
@@ -19,7 +19,7 @@
     >
 
       <v-list>
-        <v-list-item class="mb-4" v-if="$vuetify.breakpoint.lgAndUp">
+        <v-list-item class="mb-4" v-if="!$vuetify.breakpoint.mobile">
             <v-list-item-action @click.stop="miniVariant = !miniVariant">
               <v-icon color="secondary" large v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'" />
             </v-list-item-action>

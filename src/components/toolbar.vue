@@ -1,7 +1,7 @@
 <template>
     <v-app-bar app fixed :clipped-left="true" color="primary" elevate-on-scroll>
       <v-app-bar-nav-icon v-if="$vuetify.breakpoint.mobile" class="secondary--text" @click="$emit('toggle-navigate')">
-        <v-icon left color="secondary accent-1">fa-bars</v-icon>
+        <v-icon left class="secondary--text ml-3">fa-bars</v-icon>
       </v-app-bar-nav-icon>
 
       <v-toolbar-title class="toolbar-title">
@@ -15,19 +15,19 @@
 
       <v-toolbar-items justify-space-around  v-if="!$vuetify.breakpoint.mobile">
         <v-btn :to="{ path: '/home' }" depressed class="primary accent-2 secondary--text">
-          <v-icon left color="secondary accent-1">fa-home</v-icon>
+          <v-icon left color="accent-1">fa-home</v-icon>
           Accueil
         </v-btn>
         <v-btn :to="{ path: '/cv' }" depressed color="primary accent-2 secondary--text"
-          ><v-icon left color="secondary accent-1">fa-address-card</v-icon
+          ><v-icon left color="accent-1">fa-address-card</v-icon
           >CV</v-btn
         >
         <v-btn :to="{ path: '/notes' }" depressed color="primary accent-2 secondary--text"
-          ><v-icon left color="secondary accent-1">fa-clipboard</v-icon
+          ><v-icon left color="accent-1">fa-clipboard</v-icon
           >Notes</v-btn
         >
         <v-btn :to="{ path: '/portfolio' }" depressed color="primary accent-2 secondary--text"
-          ><v-icon left color="secondary accent-1">fa-images</v-icon
+          ><v-icon left color="accent-1">fa-images</v-icon
           >Albums</v-btn
         >
         <v-btn

@@ -18,7 +18,7 @@
           <v-avatar :size="$vuetify.breakpoint.mobile ? 32 : 64" class="mt-1 ml-1 mb-1 mr-3 avatar-border">
             <v-img v-if="currentKnowledge.imgsrc" contain :src="require(`@/assets/${currentKnowledge.imgsrc}`)"/>
             <v-icon :small="$vuetify.breakpoint.mobile"
-            v-if="currentKnowledge.icon" color="secondary lighten-1">{{currentKnowledge.icon}}</v-icon>
+            v-if="currentKnowledge.icon" class="secondary--text">{{currentKnowledge.icon}}</v-icon>
           </v-avatar>
           <div class="secondary--text text--lighten-1"
           :class="{ 'text-caption': $vuetify.breakpoint.mobile, 'text-h5': !$vuetify.breakpoint.mobile }">{{currentKnowledge.title}}</div>

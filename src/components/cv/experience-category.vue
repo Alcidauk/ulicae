@@ -1,7 +1,9 @@
 <template>
   <v-layout v-if="selectedPage === currentPage" row>
     <v-container>
-      <h1 class="page-title">Expériences</h1>
+      <div class="page-title"
+      :class="{ 'text-h5': $vuetify.breakpoint.mobile, 'text-h4': !$vuetify.breakpoint.mobile }">Expériences</div>
+    
       <v-expansion-panels focusable>
             <ExperienceStep
               v-for="(experience, index) in experiences"

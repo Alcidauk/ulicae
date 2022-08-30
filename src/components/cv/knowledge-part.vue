@@ -1,6 +1,7 @@
 <template>
   <v-layout column>
-    <h2 class="mt-5">{{title}}</h2>
+     <div class="mt-5"
+    :class="{ 'text-h6': $vuetify.breakpoint.mobile, 'text-h5': !$vuetify.breakpoint.mobile }">{{title}}</div>
 
   <v-container grid-list-md>
     <v-layout justify-center row wrap class="mb-2">

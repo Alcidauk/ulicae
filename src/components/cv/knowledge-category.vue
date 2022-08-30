@@ -1,6 +1,8 @@
 <template>
   <v-container v-if="selectedPage === currentPage">
-    <h1 class="page-title">Compétences</h1>
+    <div class="page-title"
+    :class="{ 'text-h5': $vuetify.breakpoint.mobile, 'text-h4': !$vuetify.breakpoint.mobile }">Compétences</div>
+    
 
     <KnowledgePart
       :knowledges=proKnowledges

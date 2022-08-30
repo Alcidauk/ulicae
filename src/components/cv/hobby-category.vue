@@ -2,7 +2,8 @@
   <v-layout v-if="selectedPage === currentPage" row>
 
             <v-container>
-                <h1 class="mb-2 page-title">Centres d'intérêts</h1>
+                <div class="mb-2 page-title"
+                :class="{ 'text-h5': $vuetify.breakpoint.mobile, 'text-h4': !$vuetify.breakpoint.mobile }">Centres d'intérêts</div>
                 <v-layout column>
                   <HobbyStep 
                     title="Développement mobile de l'application Cinélog" 

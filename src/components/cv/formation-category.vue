@@ -2,7 +2,8 @@
   <v-layout v-if="selectedPage === currentPage" row>
 
             <v-container>
-                <h1 class="mb-2 page-title">Formations</h1>
+                <div class="mb-2 page-title"
+                :class="{ 'text-h5': $vuetify.breakpoint.mobile, 'text-h4': !$vuetify.breakpoint.mobile }">Formations</div>
                 <v-layout column>
                   <FormationStep 
                     title="Université de Technologies de Belfort-Montbéliard" 

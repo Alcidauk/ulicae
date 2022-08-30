@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Vuetify from 'vuetify'
+import Vuetify from 'vuetify/lib/framework';
 import 'vuetify/dist/vuetify.min.css'
 import colors from 'vuetify/es5/util/colors'
 import '@fortawesome/fontawesome-free/css/all.css'

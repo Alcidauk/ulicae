@@ -14,13 +14,16 @@
     <v-layout>
       <v-card v-if=currentKnowledge class="ma-2" color="primary lighten-4" width="100%">
         <v-card-title class="pa-2 primary card-title">
-          <v-avatar size=64 class="mt-1 ml-1 mb-1 mr-3 avatar-border">
+          <v-avatar :size="$vuetify.breakpoint.mobile ? 32 : 64" class="mt-1 ml-1 mb-1 mr-3 avatar-border">
             <v-img v-if="currentKnowledge.imgsrc" contain :src="require(`@/assets/${currentKnowledge.imgsrc}`)"/>
-            <v-icon large v-if="currentKnowledge.icon" color="secondary lighten-1">{{currentKnowledge.icon}}</v-icon>
+            <v-icon :small="$vuetify.breakpoint.mobile"
+            v-if="currentKnowledge.icon" color="secondary lighten-1">{{currentKnowledge.icon}}</v-icon>
           </v-avatar>
-          <h2 class="secondary--text text--lighten-1">{{currentKnowledge.title}}</h2>
+          <div class="secondary--text text--lighten-1"
+          :class="{ 'text-caption': $vuetify.breakpoint.mobile, 'text-h5': !$vuetify.breakpoint.mobile }">{{currentKnowledge.title}}</div>
         </v-card-title>
-        <v-card-text class="mt-5" v-html="compiledMarkdown(currentKnowledge.content)"/>
+        <v-card-text class="mt-5" 
+        :class="{ 'text-caption': $vuetify.breakpoint.mobile }" v-html="compiledMarkdown(currentKnowledge.content)"/>
       </v-card>
 
       <v-card v-if=!currentKnowledge class="pa-3" color="primary lighten-4" width="100%">Cliquez sur l'une des icônes.</v-card>
@@ -69,5 +72,8 @@ export default {
 .card-title {
   background-color: #009688;
   font-weight: bold;
+
+  word-break: normal;
+  flex-wrap: nowrap;
 }
 </style>

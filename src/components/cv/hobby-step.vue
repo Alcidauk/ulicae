@@ -4,10 +4,12 @@
         :src="require(`@/assets/${imgsrc}`)"
         aspect-ratio="5" :position="imgposition"/>
 
-      <v-card-title primary-title>
+      <v-card-title primary-title class="card-title">
         <div>
-          <h3 class="page-title">{{title}}</h3>
-          <div class="primary--text subheading">{{description}}</div>
+          <div class="page-title"
+          :class="{ 'text-subtitle-2': $vuetify.breakpoint.mobile, 'text-h5': !$vuetify.breakpoint.mobile }">{{title}}</div>
+          <div class="primary--text subheading"
+          :class="{ 'text-caption': $vuetify.breakpoint.mobile }">{{description}}</div>
           <div class="pt-3 primary--text text--lighten-1 caption">{{subDescription}}</div>
         </div>
       </v-card-title>
@@ -28,3 +30,8 @@ export default {
 }
 </script>
 
+<style scoped>
+.card-title {
+  word-break: normal;
+}
+</style>

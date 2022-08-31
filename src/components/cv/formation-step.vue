@@ -2,7 +2,7 @@
   <v-card class="pa-2 ma-2">
     <v-container grid-list-xl>
       <v-layout class="align-center">
-        <v-avatar :size="$vuetify.breakpoint.mobile ? 48 : 96" class="avatar-border">
+        <v-avatar :size="$vuetify.breakpoint.mobile ? 48 : 96" class="avatar-border mr-5 ml-5">
               <v-img contain :src="require(`@/assets/${imgsrc}`)" alt="title"/>
         </v-avatar>
         <v-flex>

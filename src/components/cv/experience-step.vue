@@ -25,7 +25,7 @@
               <v-card-title class="pa-2 pl-3 primary card-title">
                 <v-layout row align-center>
                   <v-flex xs2 sm1>
-                    <v-icon class="secondary--text" small="$vuetify.breakpoint.mobile">{{
+                    <v-icon class="secondary--text" :small="$vuetify.breakpoint.mobile">{{
                       item.icon
                     }}</v-icon>
                   </v-flex>

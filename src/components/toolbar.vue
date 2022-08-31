@@ -80,8 +80,9 @@ export default {
   font-size: 0.8em;
 }
 
+/* need important due to vuetify use of important */
 .subtitle-font {
-  font-family: "library";
+  font-family: "library" !important;
   font-size: 1em;
 }
 </style>

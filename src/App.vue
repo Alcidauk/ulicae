@@ -26,14 +26,14 @@
 
           <v-list-item :to="{ path: '/notes' }">
             <v-list-item-icon depressed>
-              <v-icon>fa-clipboard</v-icon>
+              <v-icon class="secondary--text">fa-clipboard</v-icon>
             </v-list-item-icon>
             <v-list-item-title class="secondary--text">Notes</v-list-item-title>
           </v-list-item>
 
           <v-list-item :to="{ path: '/portfolio' }">
             <v-list-item-icon depressed>
-              <v-icon>fa-images</v-icon>
+              <v-icon class="secondary--text">fa-images</v-icon>
             </v-list-item-icon>
             <v-list-item-title class="secondary--text">Albums</v-list-item-title>
           </v-list-item>

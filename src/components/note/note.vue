@@ -1,27 +1,33 @@
-  <template>
+<template>
   <v-layout fill-height background lighten-1>
-    <v-container>
-      <h1 align="center" justify="center">Notes</h1>
 
-      <v-flex justify="center" layout v-if="notes.length !== 0">
-        <v-card
-          v-for="(note, index) in notes"
-          :key="index"
-          class="ma-2"
-          color="primary lighten-4"
-          width="100%">
-          <v-card-title class="pa-2 card-title" color="secondary accent-1">
-            <h2>{{ note.title }}</h2>
-            {{ note.date }}
-          </v-card-title>
-          <v-card-text v-html="compiledMarkdown(note.content)" />
-        </v-card>
-      </v-flex>
+    <v-navigation-drawer clipped app color="secondary lighten-1">
+      <v-list-item v-for="(noteFile, noteFileIndex) in noteFileList" :key="noteFileIndex">
+        <v-list-item-content>
+          <a @click="scrollMeTo(noteFile.name)">{{noteFile.title}}</a>
+        </v-list-item-content>
+      </v-list-item>
+    </v-navigation-drawer>
+
+    <v-container fluid class="ma-5">
+      <h1 class="mb-5">Notes</h1>
+
+      <v-card
+        v-for="(note, noteIndex) in notes"
+        :key="noteIndex"
+        :ref="noteFileList[noteIndex].name"
+        class="mb-10"
+        width="100%">
+        <v-card-title class="pa-3 text-h5">
+          {{noteFileList[noteIndex].title}}
+        </v-card-title>
+        <v-card-text v-html="compiledMarkdown(note)" />
+      </v-card>
 
       <div v-if="notes.length === 0" class="mt-5" align="center" justify="center">
-        Aucune note pour le moment.
+        Impossible d'afficher les notes.
       </div>
-    </v-container>
+    </v-container> 
   </v-layout>
 </template>
 
@@ -35,23 +41,35 @@ export default {
     msg: String,
   },
   mounted() {
-    axios
-      .get(process.env.VUE_APP_API_URL + `/notes`)
-      .then((response) => {
-        this.notes = response.data;
-      })
-      .catch((e) => {
-        this.errors.push(e);
-      });
+    this.noteFileList.forEach(noteFile => {
+      axios
+        .get(`/notes/${noteFile.name}`)
+        .then((response) => {
+          this.notes.push(response.data);
+        })
+        .catch((e) => {
+          this.errors.push(e);
+        });
+    });
   },
   methods: {
     compiledMarkdown: function (item) {
       return marked.parse(item, { sanitize: true });
     },
+    scrollMeTo(refName) {
+      var element = this.$refs[refName];
+      var top = element[0].$el.offsetTop;
+
+      window.scrollTo(0, top);
+    }
   },
   data() {
     return {
-      notes: [],
+      noteFileList: [
+        {title: "Installation de l'environnement graphique i3", name: "i3.md"},
+        {title: "Présentation de password store", name: "password-store.md"}
+      ],
+      notes:[]
     };
   },
 };

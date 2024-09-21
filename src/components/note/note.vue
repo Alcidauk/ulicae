@@ -21,7 +21,9 @@
         <v-card-title class="pa-3 text-h5">
           {{noteFileList[noteIndex].title}}
         </v-card-title>
-        <v-card-text v-html="compiledMarkdown(note)" />
+        <v-card-text>
+          <span v-html="compiledMarkdown(note)"></span>
+        </v-card-text>
       </v-card>
 
       <div v-if="notes.length === 0" class="mt-5" align="center" justify="center">
@@ -67,7 +69,8 @@ export default {
     return {
       noteFileList: [
         {title: "Installation de l'environnement graphique i3", name: "i3.md"},
-        {title: "Présentation de password store", name: "password-store.md"}
+        {title: "Présentation de password store", name: "password-store.md"},
+        {title: "Migration vue 2 vers vue 3", name: "vue3-migration.md"}
       ],
       notes:[]
     };

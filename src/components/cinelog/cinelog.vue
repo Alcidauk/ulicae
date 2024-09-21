@@ -7,7 +7,9 @@
       left
       @click.stop="permanent = !permanent"
     >
-      <v-icon color="secondary" v-html="permanent ? 'fa-angle-left' : 'fa-angle-right'" />
+      <v-icon color="secondary">
+        {{ permanent ? 'fa-angle-left' : 'fa-angle-right' }}
+      </v-icon>
     </v-btn>
     <v-navigation-drawer
       class="violet-dark-background"
@@ -17,11 +19,12 @@
       fixed
       app
     >
-
       <v-list>
         <v-list-item class="mb-4" v-if="!$vuetify.breakpoint.mobile">
             <v-list-item-action @click.stop="miniVariant = !miniVariant">
-              <v-icon color="secondary" large v-html="miniVariant ? 'fa-angle-right' : 'fa-angle-left'" />
+              <v-icon large color="secondary">
+                {{ miniVariant ? 'fa-angle-right' : 'fa-angle-left' }}
+              </v-icon>
             </v-list-item-action>
         </v-list-item>
         

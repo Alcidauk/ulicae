@@ -24,7 +24,9 @@
           :class="{ 'text-caption': $vuetify.breakpoint.mobile, 'text-h5': !$vuetify.breakpoint.mobile }">{{currentKnowledge.title}}</div>
         </v-card-title>
         <v-card-text class="mt-5" 
-        :class="{ 'text-caption': $vuetify.breakpoint.mobile }" v-html="compiledMarkdown(currentKnowledge.content)"/>
+        :class="{ 'text-caption': $vuetify.breakpoint.mobile }">
+          <span v-html="compiledMarkdown(currentKnowledge.content)"></span>
+        </v-card-text>
       </v-card>
 
       <v-card v-if=!currentKnowledge class="pa-3" color="primary lighten-4" width="100%">Cliquez sur l'une des icônes.</v-card>

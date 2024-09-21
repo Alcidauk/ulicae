@@ -36,7 +36,9 @@
                 </v-layout>
               </v-card-title>
               <v-card-text class="primary lighten-3 justify-center mt-5" 
-              :class="{ 'text-caption': $vuetify.breakpoint.mobile }" v-html="compiledMarkdown(item.content)"/>
+              :class="{ 'text-caption': $vuetify.breakpoint.mobile }">
+                <span v-html="compiledMarkdown(item.content)"></span>
+              </v-card-text>
             </v-card>
           </v-flex>
         </v-layout>
